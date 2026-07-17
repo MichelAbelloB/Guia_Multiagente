@@ -61,9 +61,14 @@ app.update_state(config, {"reporte": reporte_editado})
 
 ## Videos recomendados
 
+<div class="video-embed" data-yt-id="6t7YJcEFUIY" data-title="LangGraph interrupt: Making it easier to build human-in-the-loop agents"></div>
+
+**[LangGraph interrupt: Making it easier to build human-in-the-loop agents](https://www.youtube.com/watch?v=6t7YJcEFUIY)** — LangChain. Explica la función `interrupt()` y el checkpointing para HITL — el tema central del módulo, del canal oficial.
+
+Más videos sobre este módulo:
+
 | Video | Canal | Por qué verlo |
 |---|---|---|
-| [LangGraph interrupt: Making it easier to build human-in-the-loop agents](https://www.youtube.com/watch?v=6t7YJcEFUIY) | LangChain | Explica la función `interrupt()` y el checkpointing para HITL — el tema central del módulo, del canal oficial. |
 | [LangGraph Agents - Human-In-The-Loop Breakpoints](https://www.youtube.com/watch?v=Za8CrPqQxpA) | — | Cubre breakpoints como patrón de interacción humano-agente, complementario al anterior. |
 
 ## Notas para el instructor

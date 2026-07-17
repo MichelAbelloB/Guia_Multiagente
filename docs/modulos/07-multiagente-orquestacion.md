@@ -70,9 +70,14 @@ El supervisor no hace el trabajo — solo decide **quién** lo hace a continuaci
 
 ## Videos recomendados
 
+<div class="video-embed" data-yt-id="HonlBK19F1o" data-title="LangGraph Supervisor Agent: Multi-Agent Orchestration Walkthrough"></div>
+
+**[LangGraph Supervisor Agent: Multi-Agent Orchestration Walkthrough](https://www.youtube.com/watch?v=HonlBK19F1o)** — Walkthrough completo del patrón supervisor con `langgraph-supervisor`.
+
+Más videos sobre este módulo:
+
 | Video | Canal | Por qué verlo |
 |---|---|---|
-| [LangGraph Supervisor Agent: Multi-Agent Orchestration Walkthrough](https://www.youtube.com/watch?v=HonlBK19F1o) | — | Walkthrough completo del patrón supervisor con `langgraph-supervisor`. |
 | [LangGraph:20 — Supervisor Multi-Agentic System](https://www.youtube.com/watch?v=ktjJAxaX8rc) | — | Implementación práctica adicional del patrón supervisor/router. |
 
 ## Notas para el instructor

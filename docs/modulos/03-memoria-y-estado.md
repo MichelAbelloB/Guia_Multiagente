@@ -60,9 +60,14 @@ En el agente, esto se usa como un paso previo al razonamiento: antes de responde
 
 ## Videos recomendados
 
+<div class="video-embed" data-yt-id="cm2Ze2n9lxw" data-title="ChromaDB Crash course in 20 minutes"></div>
+
+**[ChromaDB Crash course in 20 minutes](https://www.youtube.com/watch?v=cm2Ze2n9lxw)** — Crash course directo: crear, guardar y consultar vectores en ChromaDB, con repo de código.
+
+Más videos sobre este módulo:
+
 | Video | Canal | Por qué verlo |
 |---|---|---|
-| [ChromaDB Crash course in 20 minutes](https://www.youtube.com/watch?v=cm2Ze2n9lxw) | — | Crash course directo: crear, guardar y consultar vectores en ChromaDB, con repo de código. |
 | [Storing and Using Long-Term Memory in AI Agents with LangGraph](https://www.youtube.com/watch?v=iVtVsI4UTfo) | — | Cubre memoria de largo plazo en agentes, adelanta conceptos que se retoman en el Módulo 4-5 con LangGraph. |
 | [Agent Memory: Long-Term Memory in LangGraph](https://www.youtube.com/watch?v=MkgvJzgJc4s) | — | Repaso de los tipos de memoria en agentes (episódica, semántica, procedural). |
 

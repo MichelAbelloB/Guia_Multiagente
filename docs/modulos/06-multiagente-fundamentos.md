@@ -61,9 +61,14 @@ En LangGraph, el patrón dominante es estado compartido: cada agente lee y escri
 
 ## Videos recomendados
 
+<div class="video-embed" data-yt-id="Mi5wOpAgixw" data-title="Multi-agent Systems Explained in 17 Minutes"></div>
+
+**[Multi-agent Systems Explained in 17 Minutes](https://www.youtube.com/watch?v=Mi5wOpAgixw)** — Resumen conciso de qué es un sistema multiagente y por qué usar varios agentes en vez de uno.
+
+Más videos sobre este módulo:
+
 | Video | Canal | Por qué verlo |
 |---|---|---|
-| [Multi-agent Systems Explained in 17 Minutes](https://www.youtube.com/watch?v=Mi5wOpAgixw) | — | Resumen conciso de qué es un sistema multiagente y por qué usar varios agentes en vez de uno. |
 | [Hierarchical multi-agent systems with LangGraph](https://www.youtube.com/watch?v=B_0TNuYi56w) | — | Introduce patrones jerárquicos como base conceptual antes de entrar en orquestación (Módulo 7). |
 
 ## Notas para el instructor

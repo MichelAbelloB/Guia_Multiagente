@@ -78,9 +78,14 @@ Esta función reemplaza el placeholder simulado del Módulo 1 — mismo loop, pr
 
 ## Videos recomendados
 
+<div class="video-embed" data-yt-id="2HsmNeT8TCg" data-title="Claude Function Calling Made Dead Simple (Anthropic Tool Use)"></div>
+
+**[Claude Function Calling Made Dead Simple (Anthropic Tool Use)](https://www.youtube.com/watch?v=2HsmNeT8TCg)** — Tutorial enfocado en tool use vía API, útil para ver el flujo completo request → tool call → resultado.
+
+Más videos sobre este módulo:
+
 | Video | Canal | Por qué verlo |
 |---|---|---|
-| [Claude Function Calling Made Dead Simple (Anthropic Tool Use)](https://www.youtube.com/watch?v=2HsmNeT8TCg) | — | Tutorial enfocado en tool use vía API, útil para ver el flujo completo request → tool call → resultado. |
 | [Getting Started with Tool Use in the Anthropic API](https://www.youtube.com/watch?v=7xVmf9lIj14) | — | Introducción directa a Tool Use, cubre el formato del esquema. |
 | [LLM Function Calling - AI Tools Deep Dive](https://www.youtube.com/watch?v=gMeTK6zzaO4) | — | Cubre function calling de forma agnóstica al proveedor. |
 

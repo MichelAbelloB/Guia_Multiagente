@@ -82,9 +82,12 @@ plugins:
 
 extra_css:
   - stylesheets/mascota.css
+  - stylesheets/custom.css
+  - stylesheets/video-embed.css
 
 extra_javascript:
   - javascripts/mascota.js
+  - javascripts/video-embed.js
 
 extra:
   generator: false

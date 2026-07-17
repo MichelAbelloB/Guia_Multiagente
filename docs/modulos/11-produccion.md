@@ -55,9 +55,14 @@ flowchart LR
 
 ## Videos recomendados
 
+<div class="video-embed" data-yt-id="YWVuBLSbNWE" data-title="LangSmith Deployment GA: The Easiest Way to Deploy Agents"></div>
+
+**[LangSmith Deployment GA: The Easiest Way to Deploy Agents](https://www.youtube.com/watch?v=YWVuBLSbNWE)** — LangChain. Cubre el flujo de deployment de agentes construidos con LangGraph.
+
+Más videos sobre este módulo:
+
 | Video | Canal | Por qué verlo |
 |---|---|---|
-| [LangSmith Deployment GA: The Easiest Way to Deploy Agents](https://www.youtube.com/watch?v=YWVuBLSbNWE) | LangChain | Cubre el flujo de deployment de agentes construidos con LangGraph. |
 | [Deep Dive: How to Monitor AI Agents in Production](https://www.youtube.com/watch?v=5yXLZTIqBsU) | — | Explica por qué el monitoreo de agentes en producción requiere un enfoque distinto al del software tradicional. |
 
 !!! note "Sobre los videos de este módulo"

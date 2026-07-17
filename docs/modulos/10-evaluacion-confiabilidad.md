@@ -62,9 +62,14 @@ def guardrail_output(informe: str) -> bool:
 
 ## Videos recomendados
 
+<div class="video-embed" data-yt-id="pTneXS_m1rk" data-title="Langfuse Intro — Observability & Tracing Deep Dive"></div>
+
+**[Langfuse Intro — Observability & Tracing Deep Dive](https://www.youtube.com/watch?v=pTneXS_m1rk)** — (presentado por el cofundador de Langfuse). Recorrido en profundidad de tracing/observabilidad, base técnica para detectar tool misuse.
+
+Más videos sobre este módulo:
+
 | Video | Canal | Por qué verlo |
 |---|---|---|
-| [Langfuse Intro — Observability & Tracing Deep Dive](https://www.youtube.com/watch?v=pTneXS_m1rk) | — (presentado por el cofundador de Langfuse) | Recorrido en profundidad de tracing/observabilidad, base técnica para detectar tool misuse. |
 | [10 min Walkthrough of Langfuse](https://www.youtube.com/watch?v=2E8iTvGo9Hs) | — | Tour rápido de dashboard, tracing, evaluación y datasets en Langfuse. |
 | [Langfuse Explained: LLM Observability Without Guessing What Broke](https://www.youtube.com/watch?v=IIyL4gO-FE0) | — | Cubre traces, scores y self-hosting — relevante para el stack open source del curso. |
 

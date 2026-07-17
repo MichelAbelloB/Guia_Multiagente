@@ -68,9 +68,14 @@ AutoGen modela la colaboración como una conversación de chat entre agentes, no
 
 ## Videos recomendados
 
+<div class="video-embed" data-yt-id="sPzc6hMg7So" data-title="CrewAI Tutorial: Complete Crash Course for Beginners"></div>
+
+**[CrewAI Tutorial: Complete Crash Course for Beginners](https://www.youtube.com/watch?v=sPzc6hMg7So)** — Introducción completa a CrewAI (agentes basados en roles), con código fuente.
+
+Más videos sobre este módulo:
+
 | Video | Canal | Por qué verlo |
 |---|---|---|
-| [CrewAI Tutorial: Complete Crash Course for Beginners](https://www.youtube.com/watch?v=sPzc6hMg7So) | — | Introducción completa a CrewAI (agentes basados en roles), con código fuente. |
 | [Microsoft Autogen Crash Course \| Beginner Friendly](https://www.youtube.com/watch?v=ISHEQNUpwTs) | — | Curso introductorio a AutoGen. |
 | [AutoGen vs CrewAI vs LangGraph — I Tried Them All So You Don't Have To](https://www.youtube.com/watch?v=Lp-5BYjNqlM) | — | Comparación práctica de los tres frameworks — buen cierre para el Día 44. |
 

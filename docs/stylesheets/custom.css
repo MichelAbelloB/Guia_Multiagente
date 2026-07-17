@@ -1,0 +1,4 @@
+/* Oculta el "Made with Material for MkDocs" del footer, dejando solo el copyright propio */
+.md-copyright__highlight {
+  display: none;
+}

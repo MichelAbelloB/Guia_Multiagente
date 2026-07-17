@@ -41,9 +41,14 @@ MCP (Model Context Protocol) estandariza cómo un agente descubre y llama herram
 
 ## Videos recomendados
 
+<div class="video-embed" data-yt-id="OaRhpwz_TGM" data-title="The Future of AI Agents with Andrew Ng — Interrupt 26"></div>
+
+**[The Future of AI Agents with Andrew Ng — Interrupt 26](https://www.youtube.com/watch?v=OaRhpwz_TGM)** — Fireside chat entre Andrew Ng y el fundador de LangChain sobre hacia dónde va el campo — buen cierre de curso.
+
+Más videos sobre este módulo:
+
 | Video | Canal | Por qué verlo |
 |---|---|---|
-| [The Future of AI Agents with Andrew Ng — Interrupt 26](https://www.youtube.com/watch?v=OaRhpwz_TGM) | — | Fireside chat entre Andrew Ng y el fundador de LangChain sobre hacia dónde va el campo — buen cierre de curso. |
 | [Tips for building AI agents](https://www.youtube.com/watch?v=LP5OCa20Zpg) | — (equipo de Anthropic) | Errores comunes y buenas prácticas al construir agentes — cierra el círculo con el video de apertura del Módulo 1. |
 
 ## Notas para el instructor

@@ -86,9 +86,14 @@ LangGraph ejecuta las tres ramas en paralelo cuando no hay dependencia entre ell
 
 ## Videos recomendados
 
+<div class="video-embed" data-yt-id="hvAPnpSfSGo" data-title="LangGraph: Multi-Agent Workflows"></div>
+
+**[LangGraph: Multi-Agent Workflows](https://www.youtube.com/watch?v=hvAPnpSfSGo)** — Explica cómo cada agente es un nodo y las aristas definen comunicación (patrón colaborativo vía estado compartido).
+
+Más videos sobre este módulo:
+
 | Video | Canal | Por qué verlo |
 |---|---|---|
-| [LangGraph: Multi-Agent Workflows](https://www.youtube.com/watch?v=hvAPnpSfSGo) | — | Explica cómo cada agente es un nodo y las aristas definen comunicación (patrón colaborativo vía estado compartido). |
 | [LangGraph:18 — Network / Collaborative Multi-Agent System Implementation](https://www.youtube.com/watch?v=OlxJtmYW5dk) | — | Implementación de un sistema tipo "network" colaborativo, complementario al patrón supervisor del Módulo 7. |
 
 ## Notas para el instructor

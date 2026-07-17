@@ -76,9 +76,14 @@ app.get_graph().draw_mermaid_png(output_file_path="grafo.png")
 
 ## Videos recomendados
 
+<div class="video-embed" data-yt-id="LS4pALyrm00" data-title="Crea AGENTES de IA con LangGraph y Python — Introducción"></div>
+
+**[Crea AGENTES de IA con LangGraph y Python — Introducción](https://www.youtube.com/watch?v=LS4pALyrm00)** — (en español). Introducción en español a LangGraph como framework para sistemas de agentes.
+
+Más videos sobre este módulo:
+
 | Video | Canal | Por qué verlo |
 |---|---|---|
-| [Crea AGENTES de IA con LangGraph y Python — Introducción](https://www.youtube.com/watch?v=LS4pALyrm00) | — (en español) | Introducción en español a LangGraph como framework para sistemas de agentes. |
 | [LangChain Academy: Introduction to LangGraph](https://www.youtube.com/watch?v=29XE10U6ooc) | LangChain | Resumen del curso oficial de LangChain Academy sobre LangGraph. |
 | [Introducción a LangGraph: Crea Sistemas Multi-agentes en Python](https://www.youtube.com/watch?v=fDCcDkKWabY) | — (en español) | Cubre nodos/grafos como base para lo que se ve en los Módulos 6-8 (multiagente). |
 

@@ -72,9 +72,14 @@ Y ya dentro del prompt interactivo, probar:
 
 ## Videos recomendados
 
+<div class="video-embed" data-yt-id="_9VSDr2k3r4" data-title="Introducción a los grandes modelos de lenguaje (LLM)"></div>
+
+**[Introducción a los grandes modelos de lenguaje (LLM)](https://www.youtube.com/watch?v=_9VSDr2k3r4)** — (en español). Explica qué son los LLM, cómo se entrenan y se personalizan, en términos accesibles para quien recién arranca.
+
+Más videos sobre este módulo:
+
 | Video | Canal / Fuente | Por qué verlo |
 |---|---|---|
-| [Introducción a los grandes modelos de lenguaje (LLM)](https://www.youtube.com/watch?v=_9VSDr2k3r4) | — (en español) | Explica qué son los LLM, cómo se entrenan y se personalizan, en términos accesibles para quien recién arranca. |
 | [¿Qué son los LLM? + Introducción básica a prompts](https://www.youtube.com/watch?v=5pTPm08BRCw) | — (en español) | Cubre LLMs y prompting básico juntos — buen punto de partida antes del Módulo 1. |
 | [What are AI agents?](https://www.youtube.com/watch?v=3zgm60bXmQk) | Microsoft — serie "AI Agents for Beginners" | Explica el concepto general de agente sin atarse a un framework específico. |
 | [Tutorial Ollama en Español: Tu LLM Privado en Casa](https://www.youtube.com/watch?v=WkouIQBB1GI) | — (en español) | Acompaña la actividad práctica de este módulo: instalar y correr un modelo local paso a paso. |

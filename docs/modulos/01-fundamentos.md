@@ -94,9 +94,14 @@ Este es exactamente el loop del diagrama de arriba, escrito a mano — sin LangG
 
 ## Videos recomendados
 
+<div class="video-embed" data-yt-id="D7_ipDqhtwk" data-title="How We Build Effective Agents — Barry Zhang, Anthropic"></div>
+
+**[How We Build Effective Agents — Barry Zhang, Anthropic](https://www.youtube.com/watch?v=D7_ipDqhtwk)** — AI Engineer (AI Engineer Summit 2025). Referencia canónica de Anthropic sobre cuándo un agente es la herramienta correcta vs. un flujo determinista — buen marco conceptual para abrir el curso.
+
+Más videos sobre este módulo:
+
 | Video | Canal | Por qué verlo |
 |---|---|---|
-| [How We Build Effective Agents — Barry Zhang, Anthropic](https://www.youtube.com/watch?v=D7_ipDqhtwk) | AI Engineer (AI Engineer Summit 2025) | Referencia canónica de Anthropic sobre cuándo un agente es la herramienta correcta vs. un flujo determinista — buen marco conceptual para abrir el curso. |
 | [ReAct AI Agents, clearly explained!](https://www.youtube.com/watch?v=vFdIrZyKEwQ) | — | Explicación corta y directa del patrón Thought → Action → Observation. |
 | [Understanding ReACT with LangChain](https://www.youtube.com/watch?v=Eug2clsLtFs) | — | Incluye notebook de Colab; sirve como demo práctica del loop ReAct antes de introducir frameworks. |
 
