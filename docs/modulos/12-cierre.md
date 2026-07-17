@@ -3,6 +3,19 @@
 !!! abstract "Tema central"
     Seguridad en agentes, tendencias emergentes (MCP, agentes multimodales), y la integración final del proyecto en el Demo Day.
 
+## Contenido externo: dato, no instrucción
+
+```mermaid
+flowchart LR
+    Ext["Contenido externo
+    (web, doc, resultado de tool)"] -->|se trata como| Data["Dato"]
+    Ext -.->|nunca como| Instr["Instrucción"]
+    Data --> Agent["El agente sigue
+    solo las reglas del system prompt"]
+```
+
+El principio central de seguridad del módulo, resumido en un diagrama: todo lo que el agente *lee* de una fuente externa es información a evaluar, nunca una orden a obedecer.
+
 ## Objetivos de aprendizaje
 
 - [ ] Explicar qué es prompt injection y una mitigación concreta.

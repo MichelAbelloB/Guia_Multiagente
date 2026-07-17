@@ -3,6 +3,24 @@
 !!! abstract "Tema central"
     Tool calling / function calling: cómo un LLM decide *qué* función invocar y con *qué* argumentos, de forma estructurada, y qué hacer cuando esa herramienta falla.
 
+## Cómo decide el modelo cuándo usar una herramienta
+
+```mermaid
+flowchart LR
+    U["Pregunta del usuario"] --> L{"LLM: ¿necesito
+    una herramienta?"}
+    L -->|sí| T["Genera tool call
+    (nombre + argumentos en JSON)"]
+    T --> E["Se ejecuta la función
+    en código real"]
+    E --> O["Resultado vuelve
+    como observación"]
+    O --> L
+    L -->|no| R["Responde directo"]
+```
+
+Es el mismo loop del [Módulo 1](01-fundamentos.md) — lo único nuevo es que la "acción" ahora es una llamada de función estructurada, no texto libre parseado a mano.
+
 ## Objetivos de aprendizaje
 
 - [ ] Escribir un esquema (JSON Schema) claro para una herramienta, con nombre y descripción sin ambigüedad.

@@ -3,6 +3,18 @@
 !!! abstract "Tema central"
     CrewAI y AutoGen como alternativas de más alto nivel de abstracción que LangGraph, y cuándo conviene cada enfoque.
 
+## Nivel de abstracción, de un vistazo
+
+```mermaid
+flowchart LR
+    L["LangGraph
+    grafo explícito, control total"] --> A["AutoGen
+    conversación entre agentes"] --> C["CrewAI
+    roles y tareas, alto nivel"]
+```
+
+Más a la izquierda, más control fino pero más código propio. Más a la derecha, menos código pero menos visibilidad sobre el "cuándo" y el "cómo" de cada paso.
+
 ## Objetivos de aprendizaje
 
 - [ ] Reimplementar un componente del proyecto en CrewAI.

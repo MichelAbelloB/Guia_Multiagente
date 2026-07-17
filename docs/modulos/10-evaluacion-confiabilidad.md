@@ -3,6 +3,24 @@
 !!! abstract "Tema central"
     Testear agentes es distinto a testear software tradicional: no hay un único output correcto. Métricas, detección de alucinaciones/tool misuse, y guardrails.
 
+## El ciclo de evaluación
+
+```mermaid
+flowchart LR
+    C["Caso de
+    evaluación"] --> Ag["Agente
+    ejecuta"]
+    Ag --> Tr["Traza
+    (Langfuse)"]
+    Tr --> Ev{"¿Cumple
+    los criterios?"}
+    Ev -->|sí| P["Pass"]
+    Ev -->|no| F["Fail:
+    revisar prompt/tools"]
+```
+
+Sin traza no hay forma confiable de saber *por qué* falló un caso — de ahí que Langfuse sea central en este módulo, no un extra.
+
 ## Objetivos de aprendizaje
 
 - [ ] Escribir un set de casos de evaluación con criterio de éxito explícito (no solo "se ve bien").
