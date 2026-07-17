@@ -17,7 +17,7 @@
 ## Objetivos de aprendizaje
 
 - [ ] Explicar en una frase qué es un LLM y cómo genera texto (predicción del siguiente token).
-- [ ] Diferenciar prompting de fine-tuning como formas de "dirigir" un modelo.
+- [ ] Diferenciar prompting, fine-tuning y RAG como formas de "dirigir" un modelo.
 - [ ] Describir, a alto nivel, qué transforma un LLM en un agente.
 - [ ] Ubicar las piezas del ecosistema (modelo, framework, vector store, observabilidad) que se usan en el curso.
 
@@ -25,10 +25,66 @@
 
 Un LLM (Large Language Model / modelo de lenguaje grande) es un modelo entrenado para predecir, dado un texto, cuál es la unidad de texto (*token*) más probable que sigue. Ese mecanismo simple, escalado a miles de millones de parámetros y entrenado sobre enormes cantidades de texto, termina siendo capaz de razonar, resumir, traducir y programar — no porque "entienda" en el sentido humano, sino porque predecir bien el siguiente token a esa escala requiere haber capturado patrones muy ricos del lenguaje y del conocimiento.
 
-- **Token**: la unidad mínima que el modelo procesa (no siempre es una palabra completa).
-- **Inferencia**: el proceso de generar una respuesta a partir de un prompt — lo que corre localmente con Ollama en este curso.
-- **Prompting vs. fine-tuning**: *prompting* = dirigir el comportamiento con instrucciones en el momento; *fine-tuning* = reentrenar el modelo con ejemplos para cambiar su comportamiento de base. El curso usa casi exclusivamente prompting: es gratis, rápido de iterar, y no requiere GPU de entrenamiento.
-- **Temperature**: parámetro que controla cuán determinista o variada es la salida (0 = casi siempre la misma respuesta; valores altos = más variación).
+#### Token
+
+La unidad mínima de texto que el modelo procesa (no siempre es una palabra completa).
+
+```mermaid
+flowchart LR
+    S["'Los agentes son útiles'"] -.-> T1["Los"]
+    T1 --- T2["agen"] --- T3["tes"] --- T4["son"] --- T5["útil"] --- T6["es"]
+```
+
+#### Inferencia
+
+El proceso de generar una respuesta a partir de un prompt, token a token — lo que corre localmente con Ollama en este curso.
+
+```mermaid
+flowchart LR
+    P["Prompt
+    (entrada)"] --> M(("LLM"))
+    M --> R["Respuesta
+    generada token a token"]
+    M -.->|"repite hasta terminar"| M
+```
+
+#### Prompting vs. fine-tuning vs. RAG
+
+Tres formas distintas de dirigir o mejorar la respuesta de un mismo modelo base, sin que se excluyan entre sí:
+
+- *Prompting* = dirigir el comportamiento con instrucciones en el momento, sin tocar el modelo.
+- *Fine-tuning* = reentrenar el modelo con ejemplos para cambiar su comportamiento de base.
+- *RAG (Retrieval-Augmented Generation)* = recuperar información externa relevante (ej. de un vector store) e inyectarla en el prompt antes de generar la respuesta — se ve en detalle en el [Módulo 3](03-memoria-y-estado.md).
+
+El curso usa casi exclusivamente prompting (y RAG desde el Módulo 3): es gratis, rápido de iterar, y no requiere GPU de entrenamiento.
+
+```mermaid
+flowchart TB
+    B(("Modelo
+    base"))
+    B -->|"Prompting
+    instrucciones en el momento"| O1["Respuesta
+    dirigida por el prompt"]
+    B -->|"Fine-tuning
+    reentrenar con ejemplos"| O2["Modelo
+    ajustado"]
+    B -->|"RAG
+    inyectar info externa"| O3["Respuesta
+    con contexto recuperado"]
+```
+
+#### Temperature
+
+Parámetro que controla cuán determinista o variada es la salida.
+
+```mermaid
+flowchart LR
+    T{{"temperature"}}
+    T -->|"0.0"| D["Respuesta
+    casi siempre igual"]
+    T -->|"1.0+"| C["Respuestas
+    más variadas"]
+```
 
 ## De LLM a agente: el panorama
 
