@@ -84,19 +84,22 @@ extra_css:
   - stylesheets/mascota.css
   - stylesheets/custom.css
   - stylesheets/video-embed.css
+  - stylesheets/simulacion.css
 
 extra_javascript:
   - javascripts/mascota.js
   - javascripts/video-embed.js
+  - javascripts/simulacion.js
 
 extra:
   generator: false
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/MichelAbelloB/Guia_Multiagente
+      link: https://github.com/MichelAbelloB
 
 nav:
   - Inicio: index.md
+  - Simulación: simulacion/index.md
   - Módulos:
       - modulos/index.md
       - "0 · Panorama general": modulos/00-introduccion-general.md

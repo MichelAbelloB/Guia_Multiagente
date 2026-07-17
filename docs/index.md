@@ -9,7 +9,19 @@ Sesiones diarias de 30 minutos · Audiencia: desarrolladores con experiencia · 
 <div class="nodo-hero" markdown>
 ![Nodo, la mascota del curso](assets/mascota/nodo.png)
 
-¡Hola, soy **Nodo**! Voy a acompañarte por los 12 módulos del curso — buscame en la esquina inferior derecha de cada página si en algún momento no sabés por dónde seguir. Si es tu primera vez acá, te recomiendo arrancar por el [Módulo 0](modulos/00-introduccion-general.md).
+¡Hola, soy **Nodo**! Voy a acompañarte por los 12 módulos del curso — buscame en la esquina inferior derecha de cada página si en algún momento no sabés por dónde seguir. Si es tu primera vez acá, te recomiendo arrancar por el [Módulo 0](modulos/00-introduccion-general.md) — o si preferís jugar antes de leer, probá la [Simulación](simulacion/index.md).
+</div>
+
+<div class="grid cards" markdown>
+
+-   :material-gamepad-variant:{ .lg .middle } **¿Preferís probar antes de leer?**
+
+    ---
+
+    Jugá la **Simulación**: armá un mini agente paso a paso, con terminal incluida, directo en el navegador. 5 niveles, sin instalar nada.
+
+    [:octicons-arrow-right-24: Jugar la simulación](simulacion/index.md)
+
 </div>
 
 
