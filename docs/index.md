@@ -153,6 +153,14 @@ Un mismo [proyecto sincrónico](proyecto-sincronico.md) —una agencia de invest
 
 <div class="grid cards" markdown>
 
+-   :material-library-shelves:{ .lg .middle } **Módulos extra**
+
+    ---
+
+    Profundizaciones opcionales: prompting vs. fine-tuning vs. RAG, arquitectura de Transformers, optimización de tokens, embeddings y prompt engineering avanzado.
+
+    [:octicons-arrow-right-24: Ver módulos extra](extra/index.md)
+
 -   :material-flask-outline:{ .lg .middle } **Proyecto sincrónico**
 
     ---

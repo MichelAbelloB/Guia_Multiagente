@@ -112,6 +112,13 @@ nav:
       - "10 · Evaluación y confiabilidad": modulos/10-evaluacion-confiabilidad.md
       - "11 · Producción": modulos/11-produccion.md
       - "12 · Cierre": modulos/12-cierre.md
+  - Módulos extra:
+      - extra/index.md
+      - "Prompting vs. fine-tuning vs. RAG": extra/prompting-vs-finetuning-vs-rag.md
+      - "Arquitectura de Transformers": extra/arquitectura-transformers.md
+      - "Consumo y optimización de tokens": extra/optimizacion-tokens.md
+      - "Embeddings y espacios vectoriales": extra/embeddings.md
+      - "Prompt engineering avanzado": extra/prompt-engineering-avanzado.md
   - Proyecto sincrónico: proyecto-sincronico.md
   - Recursos:
       - recursos/index.md

@@ -50,4 +50,21 @@
 | 12 · Cierre | The Future of AI Agents with Andrew Ng — Interrupt 26 | [youtube.com/watch?v=OaRhpwz_TGM](https://www.youtube.com/watch?v=OaRhpwz_TGM) |
 | 12 · Cierre | Tips for building AI agents (equipo de Anthropic) | [youtube.com/watch?v=LP5OCa20Zpg](https://www.youtube.com/watch?v=LP5OCa20Zpg) |
 
+## Videos por módulo extra
+
+| Módulo extra | Video | Enlace |
+|---|---|---|
+| Prompting vs. fine-tuning vs. RAG | ChatGPT Prompting vs RAG vs fine tuning (CodelyTV, español) | [youtube.com/watch?v=bjCdsnkQ6Dw](https://www.youtube.com/watch?v=bjCdsnkQ6Dw) |
+| Prompting vs. fine-tuning vs. RAG | RAG vs Fine Tuning vs Prompt Engineering: Use Cases | [youtube.com/watch?v=2m1rWVy4uqE](https://www.youtube.com/watch?v=2m1rWVy4uqE) |
+| Arquitectura de Transformers | But what is a GPT? Visual intro to transformers (3Blue1Brown) | [youtube.com/watch?v=yMQPQuz5WpA](https://www.youtube.com/watch?v=yMQPQuz5WpA) |
+| Arquitectura de Transformers | Attention in transformers, step-by-step (3Blue1Brown) | [youtube.com/watch?v=eMlx5fFNoYc](https://www.youtube.com/watch?v=eMlx5fFNoYc) |
+| Arquitectura de Transformers | Let's build GPT: from scratch, in code (Andrej Karpathy) | [youtube.com/watch?v=kCc8FmEb1nY](https://www.youtube.com/watch?v=kCc8FmEb1nY) |
+| Consumo y optimización de tokens | Most devs don't understand how LLM tokens work | [youtube.com/watch?v=nKSk_TiR8YA](https://www.youtube.com/watch?v=nKSk_TiR8YA) |
+| Consumo y optimización de tokens | Let's build the GPT Tokenizer (Andrej Karpathy) | [youtube.com/watch?v=zduSFxRajkE](https://www.youtube.com/watch?v=zduSFxRajkE) |
+| Consumo y optimización de tokens | Así reduje en un 85% el consumo de tokens en Claude Code (español) | [youtube.com/watch?v=XKazxtzdyO8](https://www.youtube.com/watch?v=XKazxtzdyO8) |
+| Embeddings y espacios vectoriales | ¿Qué es un EMBEDDING? (Dot CSV, español) | [youtube.com/watch?v=RkYuH_K7Fx4](https://www.youtube.com/watch?v=RkYuH_K7Fx4) |
+| Embeddings y espacios vectoriales | OpenAI Embeddings and Vector Databases Crash Course | [youtube.com/watch?v=ySus5ZS0b94](https://www.youtube.com/watch?v=ySus5ZS0b94) |
+| Prompt engineering avanzado | Prompting 101 (Anthropic, oficial) | [youtube.com/watch?v=ysPbXH0LpIE](https://www.youtube.com/watch?v=ysPbXH0LpIE) |
+| Prompt engineering avanzado | Prompt Engineering Guide - From Beginner to Advanced | [youtube.com/watch?v=uDIW34h8cmM](https://www.youtube.com/watch?v=uDIW34h8cmM) |
+
 Cada video también está enlazado directamente en la sección "Videos recomendados" de la página de su módulo correspondiente.
