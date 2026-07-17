@@ -1,5 +1,10 @@
 # Prompting vs. fine-tuning vs. RAG, en profundidad
 
+<figure markdown>
+![Comparación visual entre Prompting, RAG y Fine-Tuning: qué cambia, cuánto tarda, cuánto cuesta y para qué sirve cada uno](../assets/img/prompt-vs-rag-vs-finetuning.jpeg)
+<figcaption>Prompting, RAG y Fine-Tuning comparados: qué modifican, tiempo, costo y uso ideal de cada técnica.</figcaption>
+</figure>
+
 !!! abstract "Tema central"
     Tres técnicas distintas para lograr que un LLM se comporte como necesitás en una tarea específica — cada una con trade-offs distintos de costo, velocidad de iteración y control. El [Módulo 0](../modulos/00-introduccion-general.md) las presenta en una línea cada una; acá se profundiza cada técnica por separado, con ejemplos concretos de cuándo elegir cuál.
 

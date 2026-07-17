@@ -1,5 +1,10 @@
 # Consumo y optimización de tokens
 
+<figure markdown>
+![Cómo optimizar tokens en LLMs: preparación del prompt, manejo de contexto y datos, y configuración del modelo](../assets/img/optimizacion-tokens.jpeg)
+<figcaption>Tres frentes para optimizar tokens: preparación del prompt, manejo de contexto/datos, y configuración del modelo.</figcaption>
+</figure>
+
 !!! abstract "Tema central"
     Cada llamada a un LLM tiene un costo en tokens — de espacio en el contexto, de latencia, y (si en algún momento se usa un proveedor pago) de dinero. Este módulo complementa al [Módulo 11 — Producción](../modulos/11-produccion.md) con el detalle de qué consume tokens más rápido de lo esperado y cómo reducirlo sin perder calidad.
 
