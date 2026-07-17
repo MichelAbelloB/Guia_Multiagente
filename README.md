@@ -1,4 +1,6 @@
-# Curso: Agentes y Sistemas Multiagente con LLMs
+# Guia_Multiagente
+
+## Curso: Agentes y Sistemas Multiagente con LLMs
 
 Sesiones diarias de 30 minutos · Audiencia: desarrolladores con experiencia · Duración: 12 semanas (continuo)
 
