@@ -1,0 +1,117 @@
+site_name: Guía Multiagente
+site_description: Curso de Agentes y Sistemas Multiagente con LLMs — 100% open source, stack local con Ollama y LangGraph.
+site_url: https://michelabellob.github.io/Guia_Multiagente/
+repo_url: https://github.com/MichelAbelloB/Guia_Multiagente
+repo_name: MichelAbelloB/Guia_Multiagente
+edit_uri: edit/main/docs/
+docs_dir: docs
+copyright: "Creado por Michel Abello — © 2026 Guía Multiagente"
+
+theme:
+  name: material
+  language: es
+  icon:
+    repo: fontawesome/brands/github
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Cambiar a modo oscuro
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Cambiar a modo claro
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - navigation.indexes
+    - navigation.instant
+    - navigation.instant.progress
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - content.code.annotate
+    - content.tabs.link
+    - content.action.edit
+    - content.tooltips
+
+markdown_extensions:
+  - toc:
+      permalink: true
+      title: En esta página
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - attr_list
+  - md_in_html
+  - tables
+  - footnotes
+  - def_list
+
+plugins:
+  - search:
+      lang: es
+
+extra_css:
+  - stylesheets/mascota.css
+
+extra_javascript:
+  - javascripts/mascota.js
+
+extra:
+  generator: false
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/MichelAbelloB/Guia_Multiagente
+
+nav:
+  - Inicio: index.md
+  - Módulos:
+      - modulos/index.md
+      - "0 · Panorama general": modulos/00-introduccion-general.md
+      - "1 · Fundamentos": modulos/01-fundamentos.md
+      - "2 · Herramientas (Tool Calling)": modulos/02-herramientas.md
+      - "3 · Memoria y estado": modulos/03-memoria-y-estado.md
+      - "4 · LangGraph I": modulos/04-langgraph-I.md
+      - "5 · LangGraph II": modulos/05-langgraph-II.md
+      - "6 · Multiagente: fundamentos": modulos/06-multiagente-fundamentos.md
+      - "7 · Multiagente: orquestación": modulos/07-multiagente-orquestacion.md
+      - "8 · Multiagente: colaboración": modulos/08-multiagente-colaboracion.md
+      - "9 · Frameworks alternativos": modulos/09-frameworks-alternativos.md
+      - "10 · Evaluación y confiabilidad": modulos/10-evaluacion-confiabilidad.md
+      - "11 · Producción": modulos/11-produccion.md
+      - "12 · Cierre": modulos/12-cierre.md
+  - Proyecto sincrónico: proyecto-sincronico.md
+  - Recursos:
+      - recursos/index.md
+      - Glosario: recursos/glosario.md
+      - Stack técnico: recursos/stack-tecnico.md
+      - Lecturas y videos: recursos/lecturas-recomendadas.md
