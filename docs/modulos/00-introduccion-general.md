@@ -1,5 +1,10 @@
 # Módulo 0 — Panorama general: de un LLM a un agente (Orientación)
 
+<figure markdown>
+![Qué es un agente de inteligencia artificial: entidad con cerebro (LLM), canal de comunicación y capacidad de acción](../assets/img/agente-de-ia.jpeg)
+<figcaption>Un agente de IA como entidad con tres componentes: cerebro (LLM), canal de comunicación y capacidad de acción.</figcaption>
+</figure>
+
 !!! abstract "Tema central"
     Antes de entrar en el detalle técnico del [Módulo 1](01-fundamentos.md), este módulo da una vista panorámica: qué es un LLM en términos generales, cómo se llega de "modelo que predice texto" a "agente que actúa", y un mapa del ecosistema (modelos, frameworks, proveedores) que se usa durante todo el curso.
 
