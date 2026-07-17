@@ -26,7 +26,13 @@
     "/recursos/": "Glosario, stack técnico y videos, todo junto. Si te perdés un término, empezá por acá.",
     "/recursos/glosario/": "¿Un término no te cierra? Este glosario se amplía módulo a módulo — volvé cuando haga falta.",
     "/recursos/stack-tecnico/": "Todo lo que necesitás instalar está acá, con comandos para Linux/macOS y Windows.",
-    "/recursos/lecturas-recomendadas/": "Todos los videos del curso, agrupados por módulo, en una sola lista."
+    "/recursos/lecturas-recomendadas/": "Todos los videos del curso, agrupados por módulo, en una sola lista.",
+    "/extra/": "Estos módulos no consumen semana del cronograma — son para cuando querés profundizar un tema puntual.",
+    "/extra/prompting-vs-finetuning-vs-rag/": "Si tenés dudas, andá directo al árbol de decisión: en dos preguntas te dice qué técnica conviene para tu caso.",
+    "/extra/arquitectura-transformers/": "Es el módulo más denso del curso. Andá con calma, y si algo no cierra, el video de 3Blue1Brown lo explica mejor que cualquier texto.",
+    "/extra/optimizacion-tokens/": "Corré el ejemplo de tiktoken con una frase en español y otra en inglés — vas a ver la diferencia con tus propios ojos, no hace falta que me creas.",
+    "/extra/embeddings/": "Esto es lo que hace ChromaDB por debajo en el Módulo 3. Si esa parte del curso te quedó como caja negra, empezá por acá.",
+    "/extra/prompt-engineering-avanzado/": "Probá el mismo prompt con y sin ejemplos few-shot sobre el agente del proyecto — la diferencia se nota más de lo que pensás."
   };
 
   var DEFAULT_TIP = "Seguí explorando — cada módulo tiene ejemplos, videos y un checklist al final.";
