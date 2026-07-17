@@ -9,6 +9,7 @@
 
   var LEVELS = [
     {
+      node: { icon: "🔌", label: "Herramienta" },
       title: "Nivel 1 — Por qué hace falta un agente",
       brief:
         "Mirá esto: le pregunté la fecha de hoy a un modelo sin ninguna herramienta. Fijate qué responde.",
@@ -36,6 +37,7 @@
       xp: 10,
     },
     {
+      node: { icon: "💬", label: "Prompt" },
       title: "Nivel 2 — El primer system prompt",
       brief:
         "Ya tenés la herramienta instalada. Ahora el agente necesita saber CUÁNDO usarla — no alcanza con dársela.",
@@ -66,6 +68,7 @@
       xp: 10,
     },
     {
+      node: { icon: "⚙️", label: "Ejecución" },
       title: "Nivel 3 — Tool calling en acción",
       brief: "Con el system prompt correcto, así se ve el agente resolviendo la misma pregunta:",
       terminal: [
@@ -89,6 +92,7 @@
       xp: 10,
     },
     {
+      node: { icon: "💾", label: "Memoria" },
       title: "Nivel 4 — Memoria: no perder lo investigado",
       brief:
         "El agente investigó algo importante para el reporte. Si reiniciás el programa mañana, ¿dónde tiene que estar guardado ese hallazgo para no perderlo?",
@@ -117,6 +121,7 @@
       xp: 10,
     },
     {
+      node: { icon: "👥", label: "Equipo" },
       title: "Nivel 5 — De un agente a un equipo",
       brief:
         "El proyecto creció: ahora hay que investigar, verificar fuentes y redactar un informe. Un solo agente ya no alcanza.",
@@ -185,15 +190,41 @@
     return e;
   }
 
-  function renderProgressBar(container, levelIndex) {
+  function renderRoadmap(container, levelIndex) {
     var wrap = el("div", "sim-progress");
-    var track = el("div", "sim-progress-track");
-    var fill = el("div", "sim-progress-fill");
-    var pct = Math.round((levelIndex / LEVELS.length) * 100);
-    fill.style.width = pct + "%";
-    track.appendChild(fill);
+
+    var nodesMeta = LEVELS.map(function (l) {
+      return l.node;
+    }).concat([{ icon: "🏁", label: "Meta" }]);
+
+    var map = el("div", "sim-roadmap");
+    nodesMeta.forEach(function (meta, i) {
+      var status;
+      if (i < levelIndex) {
+        status = "done";
+      } else if (i === levelIndex) {
+        status = "current";
+      } else {
+        status = "upcoming";
+      }
+
+      var node = el("div", "sim-roadmap-node " + status);
+      var circle = el("div", "sim-roadmap-circle", status === "done" ? "✓" : meta.icon);
+      circle.title = meta.label;
+      var label = el("div", "sim-roadmap-label", meta.label);
+      node.appendChild(circle);
+      node.appendChild(label);
+      map.appendChild(node);
+
+      if (i < nodesMeta.length - 1) {
+        var connectorDone = i < levelIndex;
+        var connector = el("div", "sim-roadmap-connector" + (connectorDone ? " done" : ""));
+        map.appendChild(connector);
+      }
+    });
+    wrap.appendChild(map);
+
     var xpBadge = el("div", "sim-xp-badge", "⭐ " + state.xp + " XP");
-    wrap.appendChild(track);
     wrap.appendChild(xpBadge);
     container.appendChild(wrap);
   }
@@ -272,7 +303,7 @@
     var screen = el("div", "sim-screen");
     var levelDef = LEVELS[state.level];
 
-    renderProgressBar(screen, state.level);
+    renderRoadmap(screen, state.level);
     var titleBlock = el("div");
     titleBlock.appendChild(el("h3", "sim-title", levelDef.title));
     screen.appendChild(titleBlock);
@@ -445,8 +476,10 @@
       )
     );
 
-    var actions = el("div", "sim-actions");
     var saved = loadProgress();
+    renderRoadmap(screen, saved ? saved.level : -1);
+
+    var actions = el("div", "sim-actions");
     if (saved && saved.level > 0 && saved.level < LEVELS.length) {
       var continueBtn = el("button", "sim-btn sim-btn-primary", "Continuar (Nivel " + (saved.level + 1) + ")");
       continueBtn.addEventListener("click", function () {
@@ -480,6 +513,7 @@
   function renderVictory() {
     clearProgress();
     var screen = el("div", "sim-screen sim-victory");
+    renderRoadmap(screen, LEVELS.length + 1);
     var img = document.createElement("img");
     img.src = nodoSrc;
     img.alt = "Nodo";

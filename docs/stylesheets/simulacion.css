@@ -35,19 +35,93 @@
   margin-bottom: 1.5rem;
 }
 
-.sim-progress-track {
+.sim-roadmap {
+  display: flex;
+  align-items: flex-start;
   flex: 1;
-  height: 8px;
-  border-radius: 999px;
-  background: var(--sim-border);
-  overflow: hidden;
+  overflow-x: auto;
+  padding: 0.15rem 0.15rem 0.35rem;
 }
 
-.sim-progress-fill {
-  height: 100%;
-  background: linear-gradient(90deg, var(--sim-accent), var(--sim-green));
-  border-radius: 999px;
-  transition: width 0.4s ease;
+.sim-roadmap-node {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+  width: 60px;
+}
+
+.sim-roadmap-circle {
+  width: 34px;
+  height: 34px;
+  min-width: 34px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+  border: 2px solid var(--sim-border);
+  background: var(--sim-panel);
+  color: var(--sim-dim);
+  transition: border-color 0.25s ease, background 0.25s ease, box-shadow 0.25s ease;
+}
+
+.sim-roadmap-node.done .sim-roadmap-circle {
+  border-color: var(--sim-green);
+  background: var(--sim-green);
+  color: #05280d;
+}
+
+.sim-roadmap-node.current .sim-roadmap-circle {
+  border-color: var(--sim-accent);
+  background: var(--sim-accent);
+  color: #fff;
+  animation: sim-pulse 1.6s ease-in-out infinite;
+}
+
+.sim-roadmap-node.upcoming .sim-roadmap-circle {
+  opacity: 0.5;
+}
+
+@keyframes sim-pulse {
+  0%, 100% { box-shadow: 0 0 0 4px rgba(92, 107, 192, 0.35); }
+  50% { box-shadow: 0 0 0 9px rgba(92, 107, 192, 0.12); }
+}
+
+.sim-roadmap-label {
+  margin-top: 0.3rem;
+  font-size: 0.6rem;
+  color: var(--sim-dim);
+  text-align: center;
+  white-space: nowrap;
+}
+
+.sim-roadmap-node.current .sim-roadmap-label {
+  color: #fff;
+  font-weight: 700;
+}
+
+.sim-roadmap-node.upcoming .sim-roadmap-label {
+  opacity: 0.6;
+}
+
+.sim-roadmap-connector {
+  flex: 1;
+  min-width: 14px;
+  height: 2px;
+  margin-top: 17px;
+  background-image: repeating-linear-gradient(
+    90deg,
+    var(--sim-border) 0,
+    var(--sim-border) 4px,
+    transparent 4px,
+    transparent 8px
+  );
+}
+
+.sim-roadmap-connector.done {
+  background-image: none;
+  background-color: var(--sim-green);
 }
 
 .sim-xp-badge {
