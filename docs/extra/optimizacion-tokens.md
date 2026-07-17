@@ -126,6 +126,32 @@ Más videos sobre este tema:
 | [Así reduje en un 85% el consumo de tokens en Claude Code](https://www.youtube.com/watch?v=XKazxtzdyO8) | Carlos Alarcón - AI (en español) | Estrategias prácticas y actuales de gestión de contexto y caching para reducir consumo de tokens en agentes. |
 | [How and When to Use Anthropic's Prompt Caching Feature](https://www.youtube.com/watch?v=_0uiiJfsBPI) | Mark Kashef | Cubre prompt caching con ejemplos de código — técnica clave para reducir costo en contexto largo. |
 
+## Ejercicio práctico
+
+Tomá la descripción de `herramienta_busqueda` del Módulo 2 y reescribila para que ocupe menos tokens sin perder claridad para el modelo.
+
+??? success "Ver solución"
+    ```text
+    Original:
+    "Busca información actual en la web. Usar solo si la pregunta requiere
+    datos que pueden haber cambiado recientemente."
+
+    Más corta, mismo significado:
+    "Busca info actual en la web. Usar solo si la pregunta necesita datos
+    recientes."
+    ```
+    La segunda versión mantiene ambas condiciones clave (qué hace, cuándo usarla) en menos tokens — el objetivo no es acortar a cualquier costo, sino no repetir palabras que no agregan información nueva para el modelo.
+
+## Autoevaluación
+
+<div class="mc-quiz" markdown>
+¿Cuál de estas NO es una fuente típica de consumo de tokens en un agente?
+
+- [ ] El historial de conversación acumulado.
+- [x] El nombre que le pusiste a una variable en tu código Python.
+- [ ] Los esquemas de herramientas repetidos en cada llamada.
+</div>
+
 ## Checklist de cierre
 
 - [ ] Medí (con `prompt_eval_count`/`eval_count` de Ollama) cuántos tokens consume una llamada real del proyecto sincrónico.

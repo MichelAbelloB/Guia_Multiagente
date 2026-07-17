@@ -154,6 +154,26 @@ Más videos sobre este módulo:
 - No introduce todavía el loop ReAct ni tool calling en detalle — es intencional, se reserva para el Módulo 1 y el Módulo 2 respectivamente. Acá el objetivo es vocabulario e intuición general, no implementación.
 - Si el grupo ya tiene experiencia previa con LLMs (ej. uso de ChatGPT/Claude a nivel usuario), este módulo puede resumirse solo a la actividad práctica de Ollama.
 
+## Ejercicio práctico
+
+Sin mirar la tabla del ecosistema de arriba, escribí de memoria en qué módulo se ve en detalle cada una de estas piezas: LangGraph, ChromaDB, Langfuse, tool calling.
+
+??? success "Ver solución"
+    - LangGraph → Módulos 4-5
+    - ChromaDB (vector store) → Módulo 3
+    - Langfuse → Módulos 10-11
+    - Tool calling → Módulo 2
+
+## Autoevaluación
+
+<div class="mc-quiz" markdown>
+¿Qué controla el parámetro `temperature`?
+
+- [ ] Cuántos tokens puede generar el modelo como máximo.
+- [x] Cuán determinista o variada es la salida del modelo.
+- [ ] Qué modelo específico se usa para responder.
+</div>
+
 ## Checklist de cierre del módulo
 
 - [ ] Cada participante corrió al menos un modelo local con Ollama desde la terminal.

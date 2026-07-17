@@ -79,6 +79,30 @@ Más videos sobre este módulo:
 - El Día 30 abre la Fase 4 del proyecto sincrónico (`proyecto-sincronico/fase-4-multiagente/`).
 - Buen momento para introducir la práctica de registrar decisiones de arquitectura (ADR) en `proyecto-sincronico/decisiones.md`.
 
+## Ejercicio práctico
+
+Completá la plantilla de diseño de rol del Día 27 para un cuarto agente: "Auditor".
+
+??? success "Ver solución"
+    ```markdown
+    ### Agente: Auditor
+    - Sabe: qué hace válido a un informe (fuentes citadas, sin afirmaciones sin verificar).
+    - Puede hacer: aprobar o rechazar el borrador, con motivo.
+    - NO debe: reescribir el informe él mismo, ni investigar temas nuevos.
+    - Recibe de: Redactor (el borrador completo).
+    - Entrega a: Redactor (feedback, si rechaza) o al usuario final (si aprueba).
+    ```
+
+## Autoevaluación
+
+<div class="mc-quiz" markdown>
+¿Cuál es un costo oculto real de pasar de un agente a varios?
+
+- [ ] Que el código queda más corto.
+- [x] Más latencia y más tokens, por las llamadas encadenadas y el contexto repetido.
+- [ ] Que deja de funcionar con modelos locales.
+</div>
+
 ## Checklist de cierre del módulo
 
 - [ ] Cada agente del proyecto tiene su plantilla de rol completa (sabe / puede / no debe).

@@ -79,6 +79,30 @@ Más videos sobre este módulo:
 - Semana de repaso/buffer sugerida si el grupo se atrasó en el Módulo 4.
 - El Día 25 cierra la Fase 3 del proyecto sincrónico.
 
+## Ejercicio práctico
+
+Modificá el ejemplo de checkpoint del Día 22 para que cada usuario tenga su propio `thread_id`, en vez del valor fijo `"investigacion-42"`.
+
+??? success "Ver solución"
+    ```python
+    def config_para_usuario(usuario_id: str) -> dict:
+        return {"configurable": {"thread_id": f"investigacion-{usuario_id}"}}
+
+    config = config_para_usuario("michel")
+    app.invoke({"messages": [("user", "Investigá el estado del mercado de EVs")]}, config)
+    ```
+    Cada usuario obtiene su propio hilo de conversación persistente, sin pisar el de otro.
+
+## Autoevaluación
+
+<div class="mc-quiz" markdown>
+¿Para qué sirve `interrupt_before` en LangGraph?
+
+- [ ] Para persistir el estado del grafo en disco automáticamente.
+- [x] Para pausar el grafo antes de un nodo y esperar aprobación humana.
+- [ ] Para acelerar la ejecución de nodos pesados.
+</div>
+
 ## Checklist de cierre del módulo
 
 - [ ] El grafo del proyecto persiste estado entre ejecuciones (probado cerrando y reabriendo el proceso).

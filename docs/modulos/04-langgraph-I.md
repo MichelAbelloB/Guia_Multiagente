@@ -95,6 +95,33 @@ Más videos sobre este módulo:
 - LangGraph funciona igual con modelos locales (vía `langchain-ollama`) que con APIs de pago — no hay que cambiar de framework al migrar de un extremo a otro.
 - El Día 19 inicia la Fase 3 del proyecto (`proyecto-sincronico/fase-3-langgraph/`).
 
+## Ejercicio práctico
+
+Agregá un tercer nodo `resumen` al grafo mínimo del Día 17-18, que se ejecute justo antes de terminar (cuando `hay_tool_call` devuelve `END`), en vez de terminar directo.
+
+??? success "Ver solución"
+    ```python
+    def nodo_resumen(state: State) -> State:
+        ultimo = state["messages"][-1]
+        resumen = modelo.invoke([("system", "Resumí la respuesta anterior en una oración.")] + [ultimo])
+        return {"messages": [resumen]}
+
+    grafo.add_node("resumen", nodo_resumen)
+    grafo.add_conditional_edges("agente", hay_tool_call, {"herramienta": "herramienta", END: "resumen"})
+    grafo.add_edge("resumen", END)
+    ```
+    El cambio clave: la arista condicional ya no apunta a `END` directo — apunta a `"resumen"`, y desde ahí una arista fija va a `END`.
+
+## Autoevaluación
+
+<div class="mc-quiz" markdown>
+¿Qué es una arista condicional en LangGraph?
+
+- [ ] Una arista que siempre lleva al mismo nodo siguiente.
+- [x] Una transición cuyo destino se decide en tiempo de ejecución según el estado.
+- [ ] Un nodo que puede fallar y reintentar automáticamente.
+</div>
+
 ## Checklist de cierre del módulo
 
 - [ ] Cada participante compiló y corrió un grafo mínimo de 2 nodos.

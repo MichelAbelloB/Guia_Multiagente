@@ -94,6 +94,23 @@ Más videos sobre este tema:
 | [Attention in transformers, step-by-step](https://www.youtube.com/watch?v=eMlx5fFNoYc) | 3Blue1Brown | Profundiza en self-attention, multi-head attention y cross-attention — complemento directo del video de arriba. |
 | [Let's build GPT: from scratch, in code, spelled out](https://www.youtube.com/watch?v=kCc8FmEb1nY) | Andrej Karpathy | Construye un transformer completo en código (self-attention, embeddings posicionales, feedforward, residuales). Denso (~2h) pero es la referencia definitiva para developers. |
 
+## Ejercicio práctico
+
+Explicá con tus propias palabras, en 2-3 líneas, por qué hace falta el embedding posicional si ya existe la self-attention.
+
+??? success "Ver solución"
+    La self-attention por sí sola compara cada token contra todos los demás sin importar el orden en que aparecen — "el perro mordió al cartero" y "el cartero mordió al perro" generarían las mismas relaciones de atención si no se agrega información de posición. El embedding posicional le suma a cada token una señal de "en qué lugar de la secuencia estoy", para que el orden sí importe.
+
+## Autoevaluación
+
+<div class="mc-quiz" markdown>
+¿Qué compara mecánicamente la self-attention?
+
+- [x] El Query de un token contra los Keys de todos los demás tokens.
+- [ ] El tamaño del vocabulario del modelo.
+- [ ] La temperature configurada para la generación.
+</div>
+
 ## Checklist de cierre
 
 - [ ] Puedo explicar con mis palabras qué hace la self-attention, sin usar la palabra "magia".

@@ -118,6 +118,41 @@ Más videos sobre este módulo:
 - Con Ollama, verificar que el modelo elegido soporte tool calling nativo (ej. `llama3.1`, `qwen2.5`); si no, mostrar el patrón manual de parseo de JSON como alternativa (el del Módulo 1).
 - El Día 10 avanza el proyecto: agregar la herramienta de búsqueda al agente de la Fase 1.
 
+## Ejercicio práctico
+
+Escribí el tool schema (JSON Schema) para una herramienta `calcular(expresion: str)` que evalúa una expresión matemática simple, ej. `"12 * (4 + 1)"`.
+
+??? success "Ver solución"
+    ```python
+    herramienta_calculadora = {
+        "type": "function",
+        "function": {
+            "name": "calcular",
+            "description": "Evalúa una expresión matemática simple (suma, resta, multiplicación, división, paréntesis) y devuelve el resultado numérico.",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "expresion": {
+                        "type": "string",
+                        "description": "La expresión matemática a evaluar, ej. '12 * (4 + 1)'.",
+                    }
+                },
+                "required": ["expresion"],
+            },
+        },
+    }
+    ```
+
+## Autoevaluación
+
+<div class="mc-quiz" markdown>
+¿Qué ve el modelo de una herramienta cuando decide si usarla?
+
+- [ ] El código fuente completo de la función.
+- [x] El `name`, la `description` y los `parameters` del esquema.
+- [ ] Los logs de ejecuciones anteriores de esa herramienta.
+</div>
+
 ## Checklist de cierre del módulo
 
 - [ ] Cada participante escribió al menos un esquema de herramienta desde cero.

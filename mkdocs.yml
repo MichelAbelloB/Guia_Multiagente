@@ -85,11 +85,13 @@ extra_css:
   - stylesheets/custom.css
   - stylesheets/video-embed.css
   - stylesheets/simulacion.css
+  - stylesheets/quiz.css
 
 extra_javascript:
   - javascripts/mascota.js
   - javascripts/video-embed.js
   - javascripts/simulacion.js
+  - javascripts/quiz.js
 
 extra:
   generator: false

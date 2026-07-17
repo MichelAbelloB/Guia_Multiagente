@@ -99,6 +99,40 @@ Más videos sobre este módulo:
 - CrewAI y AutoGen son ambos open source (igual que LangGraph) — el criterio de comparación es nivel de abstracción, no costo.
 - El Día 42 corresponde a la Fase 5 del proyecto (`proyecto-sincronico/fase-5-crewai/`).
 
+## Ejercicio práctico
+
+Agregá una tercera `Task` al ejemplo de CrewAI del Día 41-42: un agente "Verificador" que revisa los hallazgos del Investigador antes de que el Redactor escriba el informe.
+
+??? success "Ver solución"
+    ```python
+    verificador = Agent(
+        role="Verificador",
+        goal="Confirmar que los hallazgos citen fuentes confiables",
+        backstory="Especialista en chequeo de fuentes, desconfiado por naturaleza.",
+    )
+
+    tarea_verificar = Task(
+        description="Revisar los hallazgos y descartar los que no tengan fuente confiable",
+        agent=verificador,
+        expected_output="Lista de hallazgos verificados",
+    )
+
+    crew = Crew(
+        agents=[investigador, verificador, redactor],
+        tasks=[tarea_investigar, tarea_verificar, tarea_redactar],
+    )
+    ```
+
+## Autoevaluación
+
+<div class="mc-quiz" markdown>
+¿Qué gana CrewAI frente al supervisor de LangGraph escrito a mano en el Módulo 7?
+
+- [ ] Más control fino sobre cada transición.
+- [x] Velocidad de desarrollo, a costa de control fino sobre el flujo.
+- [ ] Nada — ambos enfoques son funcionalmente idénticos.
+</div>
+
 ## Checklist de cierre del módulo
 
 - [ ] Al menos un componente del proyecto corre en ambas versiones: LangGraph y CrewAI.

@@ -124,6 +124,35 @@ Más videos sobre este tema:
 | [Prompt Engineering Guide - From Beginner to Advanced](https://www.youtube.com/watch?v=uDIW34h8cmM) | Matthew Berman | Recorrido extenso de técnicas básicas a avanzadas, con few-shot y chain-of-thought aplicados. |
 | [Master AI Prompting: Zero-Shot, Few-Shot & Chain of Thought Explained](https://www.youtube.com/watch?v=sZIV7em3JA8) | — | Enfocado puntualmente en la comparación zero-shot / few-shot / chain-of-thought. |
 
+## Ejercicio práctico
+
+Convertí el prompt de clasificación de sentimiento (few-shot) del módulo en una versión que además pida chain-of-thought antes de dar la categoría final.
+
+??? success "Ver solución"
+    ```text
+    Clasificá el sentimiento de cada reseña como Positivo, Negativo o Neutral.
+    Antes de responder, pensá brevemente en una línea qué palabras o tono
+    influyen en tu decisión.
+
+    Reseña: "Llegó roto y nadie respondió mi reclamo."
+    Razonamiento: menciona un producto dañado y falta de respuesta — ambas señales negativas.
+    Sentimiento: Negativo
+
+    Reseña: "{reseña_nueva}"
+    Razonamiento:
+    ```
+    Se agregó un paso de razonamiento explícito antes de la categoría — el mismo principio de chain-of-thought del módulo, aplicado sobre el ejemplo few-shot ya existente.
+
+## Autoevaluación
+
+<div class="mc-quiz" markdown>
+¿Cuándo conviene NO usar chain-of-thought?
+
+- [x] En tareas simples donde no lo necesitás y solo suma latencia y costo.
+- [ ] Siempre conviene usarlo, no tiene desventajas.
+- [ ] Nunca conviene usarlo, es una técnica obsoleta.
+</div>
+
 ## Checklist de cierre
 
 - [ ] Reescribí un prompt del proyecto sincrónico agregando 2-3 ejemplos few-shot y comparé el resultado contra la versión sin ejemplos.

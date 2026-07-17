@@ -98,6 +98,33 @@ Más videos sobre este módulo:
 
 - El Día 50 abre la Fase 6 del proyecto (`proyecto-sincronico/fase-6-evaluacion/`).
 
+## Ejercicio práctico
+
+Agregá un cuarto criterio al caso de evaluación del Día 46-47: "el informe no supera las 500 palabras".
+
+??? success "Ver solución"
+    ```python
+    "criterios": [
+        "usa la herramienta de búsqueda al menos una vez",
+        "el informe cita al menos 2 fuentes",
+        "no afirma haber verificado algo que no verificó",
+        "el informe no supera las 500 palabras",
+    ],
+    ```
+    ```python
+    resultados["el informe no supera las 500 palabras"] = len(trace["salida_final"].split()) <= 500
+    ```
+
+## Autoevaluación
+
+<div class="mc-quiz" markdown>
+¿Por qué no alcanza un `assert resultado == esperado` para evaluar un agente?
+
+- [ ] Porque Python no soporta la palabra clave `assert`.
+- [x] Porque la salida es texto generado, no un valor exacto y reproducible.
+- [ ] Porque los agentes nunca devuelven ningún resultado.
+</div>
+
 ## Checklist de cierre del módulo
 
 - [ ] Existe un set de al menos 5 casos de evaluación para el proyecto, con criterios explícitos.

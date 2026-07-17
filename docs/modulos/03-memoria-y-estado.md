@@ -79,6 +79,27 @@ Más videos sobre este módulo:
 - ChromaDB corre embebido, sin servidor externo — ideal para que cada participante lo levante local sin fricción.
 - El Día 15 corresponde a la Fase 2 del proyecto sincrónico (`proyecto-sincronico/fase-2-memoria/`).
 
+## Ejercicio práctico
+
+Escribí una función `contar_hallazgos(coleccion)` que devuelva cuántos documentos hay guardados en total en la colección de ChromaDB.
+
+??? success "Ver solución"
+    ```python
+    def contar_hallazgos(coleccion) -> int:
+        return coleccion.count()
+    ```
+    ChromaDB expone `.count()` directo en la colección — no hace falta traer todos los documentos para contarlos.
+
+## Autoevaluación
+
+<div class="mc-quiz" markdown>
+¿Qué es el "contexto contaminado"?
+
+- [ ] Un error de conexión con ChromaDB.
+- [x] Cuando información irrelevante o desactualizada en el contexto degrada la calidad de la respuesta.
+- [ ] Cuando el agente no tiene ninguna memoria configurada.
+</div>
+
 ## Checklist de cierre del módulo
 
 - [ ] Cada participante tiene una colección de ChromaDB local funcionando.

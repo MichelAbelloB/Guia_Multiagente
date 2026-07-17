@@ -114,6 +114,36 @@ Más videos sobre este módulo:
 - El código en vivo del Día 4 debe estar preparado de antemano (snippet corto, editable), no escrito desde cero.
 - Al cierre del Día 5, el proyecto debe quedar formalmente iniciado en `proyecto-sincronico/fase-1-agente-simple/`.
 
+## Ejercicio práctico
+
+Tomá el agente mínimo del Día 4 y modificá el system prompt para que, además de decidir cuándo buscar, el modelo tenga que responder **siempre en una sola oración**, sin importar el camino que tome (con o sin `BUSCAR:`).
+
+??? success "Ver solución"
+    ```python
+    mensajes = [
+        {
+            "role": "system",
+            "content": (
+                "Si necesitás datos actuales, respondé exactamente: BUSCAR: <consulta>. "
+                "Si no, respondé la solución final. "
+                "En cualquier caso, tu respuesta final debe ser una sola oración, sin excepciones."
+            ),
+        },
+        {"role": "user", "content": pregunta},
+    ]
+    ```
+    La restricción de formato ("una sola oración") se agrega como una regla más del system prompt, igual que la regla de cuándo buscar — ambas conviven en el mismo bloque de instrucciones.
+
+## Autoevaluación
+
+<div class="mc-quiz" markdown>
+¿Cuál es la diferencia clave entre un chatbot de una sola llamada y un agente con loop ReAct?
+
+- [ ] El agente usa un modelo más grande.
+- [x] El agente puede observar el resultado de su propia acción antes de decidir el siguiente paso.
+- [ ] El chatbot no puede usar system prompts.
+</div>
+
 ## Checklist de cierre del módulo
 
 - [ ] El grupo puede explicar ReAct sin mirar el diagrama.

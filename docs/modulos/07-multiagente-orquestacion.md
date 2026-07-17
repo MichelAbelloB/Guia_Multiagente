@@ -87,6 +87,29 @@ Más videos sobre este módulo:
 
 - Comparar ambos patrones en vivo sobre el mismo caso de uso ayuda a que el grupo entienda el criterio de decisión, no solo la sintaxis.
 
+## Ejercicio práctico
+
+Dado un caso donde el orden de pasos SIEMPRE es el mismo (investigar → verificar → redactar → auditar, sin excepciones ni repeticiones), escribí la versión pipeline con `add_edge` en cadena.
+
+??? success "Ver solución"
+    ```python
+    grafo.add_edge("investigador", "verificador")
+    grafo.add_edge("verificador", "redactor")
+    grafo.add_edge("redactor", "auditor")
+    grafo.add_edge("auditor", END)
+    ```
+    Sin supervisor, sin condicionales — cada paso conoce exactamente cuál es el siguiente, porque el caso lo permite.
+
+## Autoevaluación
+
+<div class="mc-quiz" markdown>
+¿Qué patrón conviene si puede hacer falta repetir un paso (ej. re-verificar una fuente)?
+
+- [ ] Pipeline secuencial.
+- [x] Supervisor/Router.
+- [ ] Ninguno — si hay que repetir un paso, hay que rehacer todo el flujo desde cero.
+</div>
+
 ## Checklist de cierre del módulo
 
 - [ ] El proyecto tiene un supervisor funcionando que delega entre al menos 3 agentes.

@@ -103,6 +103,29 @@ Más videos sobre este tema:
 | [OpenAI Embeddings and Vector Databases Crash Course](https://www.youtube.com/watch?v=ySus5ZS0b94) | Adrian Twarog | Práctico y orientado a developers, cubre embeddings + bases de datos vectoriales de forma aplicada. |
 | [Embeddings & Vector Databases Explained](https://www.youtube.com/watch?v=rw1YfQQttfo) | LearnThatStack | Contenido reciente sobre cómo la similitud vectorial hace posible la búsqueda semántica a escala. |
 
+## Ejercicio práctico
+
+Usando la función `similitud_coseno` del módulo, definí dos vectores de juguete para "agente de IA" y "chatbot de soporte" (deberían quedar razonablemente cerca) y calculá su similitud.
+
+??? success "Ver solución"
+    ```python
+    agente_ia = np.array([0.7, 0.5])
+    chatbot_soporte = np.array([0.65, 0.55])  # concepto relacionado: ambos son "asistentes"
+
+    print(similitud_coseno(agente_ia, chatbot_soporte))  # debería dar un valor alto, cercano a 1
+    ```
+    No hay una única respuesta "correcta" en los números exactos — lo importante es que vectores que representan conceptos relacionados apunten en una dirección similar, dando una similitud alta.
+
+## Autoevaluación
+
+<div class="mc-quiz" markdown>
+¿Qué mide la similitud coseno entre dos vectores?
+
+- [ ] La magnitud (longitud) de cada vector.
+- [x] El ángulo entre los dos vectores, sin importar su magnitud.
+- [ ] La cantidad de dimensiones que tiene el modelo de embeddings.
+</div>
+
 ## Checklist de cierre
 
 - [ ] Calculé a mano (o con el snippet de arriba) la similitud coseno entre dos frases parecidas y dos frases distintas.

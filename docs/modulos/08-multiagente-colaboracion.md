@@ -104,6 +104,32 @@ Más videos sobre este módulo:
 - Semana de repaso/buffer sugerida.
 - El Día 40 es un buen punto de checkpoint de rúbrica: verificar que cada participante pueda explicar los 4 patrones multiagente del [glosario](../recursos/glosario.md).
 
+## Ejercicio práctico
+
+Agregá un contador de reintentos al ciclo auditor↔redactor del Día 36, que escale a un humano después de 3 rechazos en vez de repetir para siempre.
+
+??? success "Ver solución"
+    ```python
+    def siguiente_paso(state: State) -> str:
+        if state["aprobado"]:
+            return "publicar"
+        intentos = state.get("intentos_auditoria", 0) + 1
+        if intentos >= 3:
+            return "escalar_a_humano"
+        return "redactor"
+    ```
+    El estado ahora lleva la cuenta de intentos — el nodo `redactor` (o un nodo previo) tiene que incrementar `intentos_auditoria` en cada vuelta.
+
+## Autoevaluación
+
+<div class="mc-quiz" markdown>
+¿Por qué hace falta una regla de desempate entre agentes?
+
+- [ ] Para que el código compile sin errores.
+- [x] Para evitar un loop infinito de revisiones cuando los agentes no coinciden.
+- [ ] No hace falta si el modelo usado es lo suficientemente bueno.
+</div>
+
 ## Checklist de cierre del módulo
 
 - [ ] El proyecto tiene un agente Auditor con ciclo de revisión funcionando.

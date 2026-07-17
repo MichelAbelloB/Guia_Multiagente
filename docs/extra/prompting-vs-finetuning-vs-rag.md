@@ -161,6 +161,25 @@ Más videos sobre este tema:
 | [RAG vs Fine Tuning vs Prompt Engineering: Use Cases And Key Differences Explained](https://www.youtube.com/watch?v=2m1rWVy4uqE) | Simplilearn | Cubre casos de uso concretos de cada enfoque con buen nivel de detalle. |
 | [Fine-tuning vs RAG vs Prompting: Cuál Usar Realmente en IA](https://www.youtube.com/watch?v=lU4Yk6BG9IQ) | Christian Donaire · Nodd3r (en español) | Contenido reciente centrado en cuándo usar cada técnica — canal más chico, verificar antes de citarlo como fuente principal. |
 
+## Ejercicio práctico
+
+Para cada uno de estos 3 casos nuevos, elegí la técnica más adecuada: (1) un bot que resume los emails nuevos de soporte cada mañana; (2) un generador de nombres de producto con un estilo de marca muy específico, entrenado con 5.000 ejemplos históricos; (3) un asistente que responde dudas generales de programación.
+
+??? success "Ver solución"
+    1. **RAG** — la bandeja de entrada cambia todos los días, no tiene sentido reentrenar.
+    2. **Fine-tuning** — estilo muy específico, consistente, con dataset grande disponible.
+    3. **Prompting** — tarea general, sin necesidad de datos privados ni de un estilo ultra específico.
+
+## Autoevaluación
+
+<div class="mc-quiz" markdown>
+¿Cuál de estas técnicas NO requiere GPU de entrenamiento?
+
+- [ ] Fine-tuning.
+- [x] Prompting y RAG.
+- [ ] Ninguna de las tres.
+</div>
+
 ## Checklist de cierre
 
 - [ ] Puedo explicar las tres técnicas sin mirar la tabla.

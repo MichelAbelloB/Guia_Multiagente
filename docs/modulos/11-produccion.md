@@ -76,6 +76,34 @@ Más videos sobre este módulo:
 - Semana de repaso/buffer sugerida.
 - El Día 55 continúa la Fase 6 del proyecto, agregando trazabilidad completa con Langfuse.
 
+## Ejercicio práctico
+
+Agregá manejo de reintentos con backoff a la llamada de `app.invoke` del Día 53, con un máximo de 3 intentos ante un error transitorio.
+
+??? success "Ver solución"
+    ```python
+    import time
+
+    def invocar_con_reintentos(app, entrada, config, max_intentos=3):
+        for intento in range(1, max_intentos + 1):
+            try:
+                return app.invoke(entrada, config)
+            except Exception as e:
+                if intento == max_intentos:
+                    raise
+                time.sleep(2 ** intento)  # backoff: 2s, 4s, 8s
+    ```
+
+## Autoevaluación
+
+<div class="mc-quiz" markdown>
+¿Qué mejora principalmente el streaming?
+
+- [ ] El tiempo total que tarda en generarse la respuesta completa.
+- [x] La latencia percibida por el usuario, que ve la respuesta aparecer en vivo.
+- [ ] El costo en tokens de la llamada.
+</div>
+
 ## Checklist de cierre del módulo
 
 - [ ] El proyecto emite trazas completas a Langfuse (visibles en el dashboard local).
