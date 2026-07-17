@@ -42,6 +42,9 @@ Es el mismo loop del [Módulo 1](01-fundamentos.md) — lo único nuevo es que l
 
 En el Módulo 1 el agente decidía actuar devolviendo el texto `BUSCAR: ...`, que después se parseaba a mano. El tool/function calling nativo reemplaza ese parseo frágil por un esquema estructurado que el modelo respeta:
 
+!!! tip "Nodo dice"
+    "JSON Schema" suena más complicado de lo que es: es solo una forma estandarizada de describir la forma de un dato (qué campos tiene, de qué tipo es cada uno, cuáles son obligatorios). Acá se usa para describirle al modelo la forma que debe tener el argumento de una función — nada más.
+
 ```python
 herramienta_busqueda = {
     "type": "function",

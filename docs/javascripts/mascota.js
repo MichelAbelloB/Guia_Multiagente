@@ -4,7 +4,7 @@
   if (currentScript && currentScript.src) {
     baseUrl = currentScript.src.replace(/javascripts\/mascota\.js.*$/, "");
   }
-  var mascotSrc = baseUrl + "assets/mascota/nodo.svg";
+  var mascotSrc = baseUrl + "assets/mascota/nodo.png";
 
   var TIPS = {
     "/": "¡Hola! Soy Nodo y te voy a acompañar por todo el curso. Si es tu primera vez acá, arrancá por el <strong>Módulo 0</strong> antes que nada.",

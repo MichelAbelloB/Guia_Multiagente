@@ -48,6 +48,9 @@ print(similitud_coseno(agente_ia, receta))     # más bajo: poco parecidos
 !!! tip "Por qué coseno y no distancia euclidiana"
     Dos frases pueden significar lo mismo pero un texto más largo produce un vector "más grande" en magnitud. La similitud coseno ignora la magnitud y compara solo la dirección — por eso es la métrica estándar para texto, mientras que la distancia euclidiana es más común en otros dominios (ej. coordenadas geográficas).
 
+!!! tip "Nodo dice"
+    No hace falta calcular esto a mano en el proyecto — ChromaDB lo hace por vos con `coleccion.query()`. El snippet de arriba existe para que la "caja negra" deje de ser una caja negra, no porque lo vayas a escribir en el código real del [Módulo 3](../modulos/03-memoria-y-estado.md).
+
 ## De texto a embedding: el modelo de embeddings
 
 Generar el vector no lo hace el LLM principal — se usa un **modelo de embeddings** aparte, más chico y rápido, entrenado específicamente para producir estos vectores (ej. `nomic-embed-text` corriendo vía Ollama, o modelos de la familia `sentence-transformers`).

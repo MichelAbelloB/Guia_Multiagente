@@ -83,6 +83,9 @@ except json.JSONDecodeError:
 
 Esto es el mismo principio que el tool calling del [Módulo 2](../modulos/02-herramientas.md) (salida estructurada en vez de texto libre), aplicado sin necesariamente pasar por una tool call formal.
 
+!!! tip "Nodo dice"
+    Ese `try/except` no es opcional ni paranoico — es el mismo principio del manejo de errores de herramientas del [Módulo 2](../modulos/02-herramientas.md): el modelo puede fallar en respetar el formato, así que el código tiene que estar listo para esa observación, no asumir que siempre va a salir bien.
+
 ## Patrones de diseño de system prompts
 
 Una plantilla reutilizable para armar system prompts de agentes, en el orden que suele funcionar mejor:

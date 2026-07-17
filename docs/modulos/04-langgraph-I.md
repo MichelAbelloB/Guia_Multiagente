@@ -65,6 +65,9 @@ app = grafo.compile()
 
 Comparado con el loop manual del Módulo 1, lo que cambia no es el comportamiento — es que ahora el flujo es **inspeccionable**: se puede visualizar, pausar, y (desde el Módulo 5) persistir entre ejecuciones.
 
+!!! tip "Nodo dice"
+    `State` es solo un diccionario tipado (`TypedDict`) que define qué información viaja entre los nodos del grafo — pensalo como el "formulario compartido" que cada nodo lee y completa. No hay nada más místico ahí atrás.
+
 ### Día 20 — Visualizar el grafo
 
 ```python

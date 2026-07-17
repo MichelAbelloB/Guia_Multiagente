@@ -47,6 +47,9 @@ flowchart TB
 
 Técnicamente, cada token genera tres vectores — *Query*, *Key* y *Value* — y la atención se calcula comparando el Query de un token contra los Keys de todos los demás, para obtener los pesos con los que se combinan los Values. Esto se repite en paralelo muchas veces (*multi-head attention*): cada "cabeza" puede aprender a prestar atención a un tipo de relación distinto (una cabeza para relaciones sujeto-verbo, otra para referencias, etc.).
 
+!!! tip "Nodo dice"
+    Si Query/Key/Value te suena a base de datos, no es casualidad: es literalmente la misma idea. El *Query* es "qué estoy buscando", los *Keys* son "etiquetas" de lo disponible, y el *Value* es "lo que me llevo" si hay match. Cada token, en paralelo, hace su propia mini-búsqueda sobre todos los demás tokens.
+
 !!! tip "Por qué esto explica comportamientos reales del agente"
     Cuando un agente "pierde el hilo" en una conversación muy larga, una parte del problema es literalmente esto: hay más tokens compitiendo por la atención del modelo, y las relaciones importantes pueden diluirse. Es una de las razones técnicas detrás del "contexto contaminado" del [Módulo 3](../modulos/03-memoria-y-estado.md).
 

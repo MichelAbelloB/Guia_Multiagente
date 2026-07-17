@@ -28,6 +28,9 @@ print(len(enc.encode("Investigá el estado del mercado de vehículos eléctricos
 print(len(enc.encode("Research the state of the electric vehicle market")))
 ```
 
+!!! tip "Nodo dice"
+    Corré ese snippet una vez y vas a ver la diferencia con tus propios ojos — la versión en español casi siempre da un número más alto. Para un curso en español, esto no es un detalle menor: presupuestar tokens "a ojo" copiando cifras en inglés te puede quedar corto.
+
 !!! tip "Con Ollama, el conteo real está en la respuesta"
     Cada respuesta de Ollama incluye `prompt_eval_count` (tokens del prompt de entrada) y `eval_count` (tokens generados) — no hace falta estimarlo, se puede medir directo y loguearlo como parte de la instrumentación del [Módulo 11](../modulos/11-produccion.md).
 

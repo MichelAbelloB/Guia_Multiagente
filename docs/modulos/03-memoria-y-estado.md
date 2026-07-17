@@ -53,6 +53,9 @@ def recuperar_relevante(consulta: str, n: int = 3) -> list[str]:
 
 En el agente, esto se usa como un paso previo al razonamiento: antes de responder, se recuperan los `n` hallazgos más relevantes y se inyectan en el contexto — es RAG aplicado a la memoria propia del agente, no a documentos externos.
 
+!!! tip "Nodo dice"
+    `coleccion.query()` no busca por palabra exacta — busca por *significado*, convirtiendo el texto en un embedding y comparando qué tan cerca está de los embeddings ya guardados. Si te queda dando vueltas cómo funciona eso por debajo, el módulo extra [Embeddings y espacios vectoriales](../extra/embeddings.md) lo explica con detalle.
+
 ### Día 14 — Contexto contaminado
 
 !!! warning "Más memoria no es gratis"

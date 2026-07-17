@@ -33,6 +33,9 @@ app.invoke({"messages": [("user", "Investigá el estado del mercado de EVs")]}, 
 
 El `thread_id` identifica una conversación/ejecución específica — el grafo puede pausarse y retomarse exactamente donde quedó, incluso en otro proceso, mientras el checkpointer persista en algo más durable que memoria (SQLite, Postgres) en producción.
 
+!!! tip "Nodo dice"
+    Pensá el `thread_id` como el número de expediente de un trámite: no importa qué empleado (proceso) lo atienda, con ese número cualquiera puede retomarlo exactamente donde quedó. `MemorySaver` es la versión "en RAM" para desarrollo — se pierde al reiniciar, por eso en producción ([Módulo 11](11-produccion.md)) se cambia a algo persistente.
+
 ### Día 23 — Human-in-the-loop
 
 ```mermaid

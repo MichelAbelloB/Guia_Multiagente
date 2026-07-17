@@ -43,6 +43,9 @@ Ejercicio sugerido: inyectar deliberadamente una instrucción falsa en un result
 
 MCP (Model Context Protocol) estandariza cómo un agente descubre y llama herramientas/fuentes de datos, para no reimplementar la integración por cada combinación de framework y modelo — ver [glosario](../recursos/glosario.md). Vale la pena mostrarlo como el paso lógico después de todo lo enseñado en el Módulo 2 (tool calling) y el Módulo 9 (frameworks): mismo problema, solución estandarizada.
 
+!!! tip "Nodo dice"
+    Pensalo como un "enchufe universal" para herramientas: en el Módulo 2 escribiste el esquema de una herramienta a mano, específico para tu agente. MCP estandariza esa descripción para que cualquier agente compatible (sin importar el framework) pueda descubrir y usar la misma herramienta sin reescribir nada.
+
 ### Día 60 — Estructura sugerida del Demo Day
 
 ```markdown

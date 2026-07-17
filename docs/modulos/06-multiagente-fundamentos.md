@@ -35,6 +35,9 @@ Para cada agente nuevo, completar antes de escribir código:
 
 Esta plantilla se completa una vez por cada agente del proyecto (Investigador, Verificador, Redactor, Auditor) durante el Día 30.
 
+!!! tip "Nodo dice"
+    El campo "NO debe" es el que más se salta y el que más previene dolores de cabeza después. Si no lo escribís explícito, tarde o temprano un agente termina haciendo el trabajo de otro "porque podía" — y ahí perdés todo el beneficio de haber dividido responsabilidades.
+
 ### Día 28 — Mensajes vs. estado compartido
 
 ```mermaid

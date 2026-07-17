@@ -62,6 +62,9 @@ def evaluar_caso(caso: dict, trace: dict) -> dict:
     return resultados
 ```
 
+!!! tip "Nodo dice"
+    Una *traza* (trace) es el registro completo de una ejecución de punta a punta; cada paso individual dentro de esa traza (una llamada al LLM, una tool call) es un *span*. Es la misma terminología del [glosario](../recursos/glosario.md) — acá la ves aplicada en código real, no solo en la definición.
+
 ### Día 48 — Alucinaciones y tool misuse
 
 Recordar del [glosario](../recursos/glosario.md): alucinar en un agente no es solo "inventar un dato" — incluye llamar una herramienta inexistente, pasar argumentos inválidos, o afirmar que se ejecutó una acción que nunca ocurrió. Detectarlo requiere comparar lo que el agente *dice* que hizo contra la traza real de ejecución (de ahí la importancia de Langfuse en este módulo).

@@ -39,6 +39,9 @@ app.invoke(
 
 Cada nodo del grafo, cada llamada al modelo y cada tool call queda registrado como un span dentro de una traza — exactamente lo que el Módulo 10 necesita para detectar tool misuse y medir tasa de éxito.
 
+!!! tip "Nodo dice"
+    Streaming no reduce la cantidad de tokens ni el tiempo total de generación — lo que mejora es la *latencia percibida*: el usuario ve la respuesta aparecer palabra por palabra en vez de esperar en silencio hasta que esté completa. Vale la pena distinguir "más rápido" de "se siente más rápido", son dos problemas distintos.
+
 ### Día 54 — Retries y fallback a humano
 
 ```mermaid

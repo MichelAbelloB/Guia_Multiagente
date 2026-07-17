@@ -86,6 +86,9 @@ flowchart LR
     más variadas"]
 ```
 
+!!! tip "Nodo dice"
+    Para el agente del proyecto sincrónico, `temperature` baja (0-0.3) suele andar mejor: querés que decida de forma consistente cuándo usar una herramienta, no que sea "creativo" con eso. Guardá la temperature alta para tareas de redacción, no de decisión.
+
 ## De LLM a agente: el panorama
 
 ```mermaid

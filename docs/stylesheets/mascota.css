@@ -10,8 +10,9 @@
 }
 
 .nodo-hero img {
-  width: 88px;
-  height: 88px;
+  width: 110px;
+  height: 110px;
+  object-fit: contain;
   flex-shrink: 0;
   animation: nodo-bob 3.2s ease-in-out infinite;
 }
@@ -71,17 +72,17 @@
 }
 
 #nodo-widget .nodo-avatar-btn {
-  width: 60px;
-  height: 60px;
+  width: 64px;
+  height: 64px;
   border-radius: 50%;
   border: none;
   cursor: pointer;
-  background: var(--md-primary-fg-color);
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+  background: transparent;
+  padding: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 6px;
+  filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.3));
   animation: nodo-bounce 2.6s ease-in-out infinite;
 }
 
@@ -93,6 +94,7 @@
 #nodo-widget .nodo-avatar-btn img {
   width: 100%;
   height: 100%;
+  object-fit: contain;
 }
 
 #nodo-widget .nodo-close {

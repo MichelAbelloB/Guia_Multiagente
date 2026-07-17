@@ -60,6 +60,9 @@ grafo.add_conditional_edges("supervisor", supervisor)
 
 El supervisor no hace el trabajo — solo decide **quién** lo hace a continuación, leyendo el estado compartido. Cada agente delegado vuelve al supervisor al terminar, en vez de pasar directo al siguiente.
 
+!!! tip "Nodo dice"
+    Fijate que `supervisor()` es una función de Python común, con `if`s comunes — no hace falta que el supervisor sea "otro LLM pensando" para tomar la decisión. A veces la orquestación más confiable es la más aburrida: código determinista en vez de dejarle la decisión al modelo.
+
 ### Día 33 — Criterios de decisión
 
 | Usar Supervisor cuando... | Usar Pipeline cuando... |

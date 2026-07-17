@@ -30,6 +30,9 @@ flowchart LR
 
 La diferencia clave frente a una sola llamada al LLM: el modelo puede **observar el resultado de su propia acción** antes de decidir el siguiente paso, en vez de generar toda la respuesta de una sola pasada.
 
+!!! tip "Nodo dice"
+    Si te cuesta recordar el orden, pensalo como vos mismo investigando algo: pensás qué buscar (*Thought*), buscás (*Action*), leés el resultado (*Observation*), y recién ahí decidís si ya sabés la respuesta o necesitás buscar de nuevo. El agente hace exactamente eso, un paso a la vez.
+
 ## Desglose diario
 
 | Día | Tema | Actividad práctica |

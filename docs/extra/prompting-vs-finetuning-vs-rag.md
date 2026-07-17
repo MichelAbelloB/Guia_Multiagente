@@ -80,6 +80,9 @@ modelo_ajustado = get_peft_model(modelo_base, config)
 
 **Límite real:** requiere GPU (aunque sea alquilada), un dataset de calidad, tiempo de entrenamiento, y versionar/desplegar el modelo resultante. No sirve para "que el modelo sepa algo nuevo que cambia seguido" — para eso es mejor RAG, porque actualizar un fine-tune por cada cambio de información es carísimo e inviable a corto plazo.
 
+!!! tip "Nodo dice"
+    LoRA/QLoRA existen porque reentrenar TODOS los parámetros de un modelo grande es prohibitivo incluso para empresas grandes. La idea es congelar el modelo original y entrenar solo un puñado de parámetros nuevos "al costado" — mucho más barato, y en la práctica anda sorprendentemente bien para la mayoría de los casos.
+
 ## RAG (Retrieval-Augmented Generation)
 
 **Qué es:** en el momento de responder, buscar información relevante en una fuente externa (un vector store, una base de datos, documentos) e inyectarla en el prompt antes de generar la respuesta. El modelo no cambia — se le da contexto adicional recién antes de responder. Es la técnica que se usa desde el [Módulo 3](../modulos/03-memoria-y-estado.md) del curso.

@@ -7,7 +7,7 @@ Creado y dictado por **Michel Abello**.
 Sesiones diarias de 30 minutos · Audiencia: desarrolladores con experiencia · Duración: 12 semanas (continuo)
 
 <div class="nodo-hero" markdown>
-![Nodo, la mascota del curso, saludando](assets/mascota/nodo.svg)
+![Nodo, la mascota del curso](assets/mascota/nodo.png)
 
 ¡Hola, soy **Nodo**! Voy a acompañarte por los 12 módulos del curso — buscame en la esquina inferior derecha de cada página si en algún momento no sabés por dónde seguir. Si es tu primera vez acá, te recomiendo arrancar por el [Módulo 0](modulos/00-introduccion-general.md).
 </div>

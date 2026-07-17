@@ -60,6 +60,9 @@ def siguiente_paso(state: State) -> str:
 
 Este es el mismo mecanismo de arista condicional del Módulo 4, aplicado a un ciclo de revisión entre dos agentes en vez de entre agente y herramienta.
 
+!!! tip "Nodo dice"
+    Fijate que este código no tiene límite de reintentos — si el auditor rechaza siempre, el ciclo redactor↔auditor no termina nunca. En la práctica conviene sumar un contador y un tope (ej. "después de 3 rechazos, escalar a un humano"), el mismo principio de reintentos con límite que van a ver formalizado en el [Módulo 5](05-langgraph-II.md).
+
 ### Día 37 — Paralelo con agregación
 
 ```python

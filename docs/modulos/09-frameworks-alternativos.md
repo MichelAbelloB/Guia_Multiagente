@@ -65,6 +65,9 @@ resultado = crew.kickoff(inputs={"tema": "adopción de vehículos eléctricos en
 
 Frente al supervisor de LangGraph del Módulo 7, CrewAI resuelve la orquestación *por vos*: se declaran roles y tareas, y el framework decide el flujo de ejecución. Se gana velocidad de desarrollo, se pierde control fino sobre el "cuándo" y el "cómo" de cada transición.
 
+!!! tip "Nodo dice"
+    Un `Crew` es literalmente eso: un equipo. Le pasás los agentes (con sus roles) y las tareas (qué hay que lograr), y CrewAI arma internamente algo parecido al supervisor que armaron a mano en el Módulo 7 — solo que ya viene resuelto por el framework.
+
 ### Día 43 — AutoGen: agentes que conversan
 
 AutoGen modela la colaboración como una conversación de chat entre agentes, no como un grafo de estado — más cercano al patrón "mensajes" del [Módulo 6](06-multiagente-fundamentos.md) que al de "estado compartido" de LangGraph.
