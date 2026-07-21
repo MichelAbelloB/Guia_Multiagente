@@ -111,6 +111,22 @@ Explicá con tus propias palabras, en 2-3 líneas, por qué hace falta el embedd
 - [ ] La temperature configurada para la generación.
 </div>
 
+<div class="mc-quiz" markdown>
+¿Qué tipo de arquitectura son los modelos que usa el curso (Llama, Qwen, Mistral)?
+
+- [ ] Encoder-decoder, como los primeros transformers de traducción.
+- [x] Decoder-only.
+- [ ] Solo encoder, sin capacidad de generar texto.
+</div>
+
+<div class="mc-quiz" markdown>
+¿Qué es "multi-head attention"?
+
+- [ ] Usar varios modelos de lenguaje distintos al mismo tiempo.
+- [x] Repetir la atención en paralelo varias veces, cada "cabeza" aprendiendo un tipo de relación distinto.
+- [ ] Una técnica para reducir el consumo de tokens.
+</div>
+
 ## Checklist de cierre
 
 - [ ] Puedo explicar con mis palabras qué hace la self-attention, sin usar la palabra "magia".

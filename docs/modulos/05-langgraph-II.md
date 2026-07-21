@@ -74,11 +74,6 @@ Más videos sobre este módulo:
 |---|---|---|
 | [LangGraph Agents - Human-In-The-Loop Breakpoints](https://www.youtube.com/watch?v=Za8CrPqQxpA) | — | Cubre breakpoints como patrón de interacción humano-agente, complementario al anterior. |
 
-## Notas para el instructor
-
-- Semana de repaso/buffer sugerida si el grupo se atrasó en el Módulo 4.
-- El Día 25 cierra la Fase 3 del proyecto sincrónico.
-
 ## Ejercicio práctico
 
 Modificá el ejemplo de checkpoint del Día 22 para que cada usuario tenga su propio `thread_id`, en vez del valor fijo `"investigacion-42"`.
@@ -101,6 +96,22 @@ Modificá el ejemplo de checkpoint del Día 22 para que cada usuario tenga su pr
 - [ ] Para persistir el estado del grafo en disco automáticamente.
 - [x] Para pausar el grafo antes de un nodo y esperar aprobación humana.
 - [ ] Para acelerar la ejecución de nodos pesados.
+</div>
+
+<div class="mc-quiz" markdown>
+¿Para qué sirve el `thread_id` en un checkpoint?
+
+- [ ] Para elegir qué modelo de LLM se va a usar.
+- [x] Para identificar una conversación/ejecución específica que se puede retomar después.
+- [ ] Para acelerar la inferencia del modelo.
+</div>
+
+<div class="mc-quiz" markdown>
+Si usás `MemorySaver` como checkpointer y reiniciás el proceso, ¿qué pasa con el estado guardado?
+
+- [ ] Se mantiene igual, sin cambios.
+- [x] Se pierde, porque vive solo en memoria (RAM).
+- [ ] Se sube automáticamente a un servidor en la nube.
 </div>
 
 ## Checklist de cierre del módulo

@@ -180,6 +180,22 @@ Para cada uno de estos 3 casos nuevos, elegí la técnica más adecuada: (1) un 
 - [ ] Ninguna de las tres.
 </div>
 
+<div class="mc-quiz" markdown>
+¿Cuál es un límite real del fine-tuning, según el módulo?
+
+- [ ] No puede cambiar el estilo de respuesta del modelo.
+- [x] Requiere GPU, dataset de calidad, y no sirve bien para información que cambia seguido.
+- [ ] No existen alternativas más baratas para ningún caso.
+</div>
+
+<div class="mc-quiz" markdown>
+¿Desde qué módulo del curso principal se usa RAG en el proyecto sincrónico?
+
+- [ ] Desde el Módulo 1.
+- [x] Desde el Módulo 3.
+- [ ] Desde el Módulo 9.
+</div>
+
 ## Checklist de cierre
 
 - [ ] Puedo explicar las tres técnicas sin mirar la tabla.

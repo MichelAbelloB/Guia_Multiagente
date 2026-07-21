@@ -94,10 +94,6 @@ Más videos sobre este módulo:
 | [10 min Walkthrough of Langfuse](https://www.youtube.com/watch?v=2E8iTvGo9Hs) | — | Tour rápido de dashboard, tracing, evaluación y datasets en Langfuse. |
 | [Langfuse Explained: LLM Observability Without Guessing What Broke](https://www.youtube.com/watch?v=IIyL4gO-FE0) | — | Cubre traces, scores y self-hosting — relevante para el stack open source del curso. |
 
-## Notas para el instructor
-
-- El Día 50 abre la Fase 6 del proyecto (`proyecto-sincronico/fase-6-evaluacion/`).
-
 ## Ejercicio práctico
 
 Agregá un cuarto criterio al caso de evaluación del Día 46-47: "el informe no supera las 500 palabras".
@@ -123,6 +119,22 @@ Agregá un cuarto criterio al caso de evaluación del Día 46-47: "el informe no
 - [ ] Porque Python no soporta la palabra clave `assert`.
 - [x] Porque la salida es texto generado, no un valor exacto y reproducible.
 - [ ] Porque los agentes nunca devuelven ningún resultado.
+</div>
+
+<div class="mc-quiz" markdown>
+¿Qué es "tool misuse"?
+
+- [ ] Cuando el usuario de la app usa mal la interfaz.
+- [x] Cuando el agente llama una herramienta inexistente o con argumentos inválidos.
+- [ ] Cuando una herramienta tarda demasiado en responder.
+</div>
+
+<div class="mc-quiz" markdown>
+¿Para qué sirve un guardrail de output?
+
+- [ ] Para acelerar la respuesta del modelo.
+- [x] Para evitar publicar una respuesta que no cumple ciertas condiciones mínimas.
+- [ ] Para elegir automáticamente qué modelo usar.
 </div>
 
 ## Checklist de cierre del módulo

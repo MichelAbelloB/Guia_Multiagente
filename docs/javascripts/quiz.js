@@ -3,21 +3,31 @@
     if (quiz.dataset.enhanced === "1") return;
     quiz.dataset.enhanced = "1";
 
-    var items = Array.prototype.slice.call(quiz.querySelectorAll("li"));
+    var rawItems = Array.prototype.slice.call(quiz.querySelectorAll("li"));
     var feedback = document.createElement("p");
     feedback.className = "mc-quiz-feedback";
     feedback.style.display = "none";
 
-    items.forEach(function (li) {
+    // Se lee isCorrect y se borra el checkbox+indicador ANTES de tocar nada más,
+    // para que ninguna regla CSS de Material (input:checked + .task-list-indicator)
+    // pueda revelar visualmente cuál es la opción correcta antes de responder.
+    var entries = rawItems.map(function (li) {
       var checkbox = li.querySelector('input[type="checkbox"]');
-      if (!checkbox) return;
+      if (!checkbox) return null;
       var isCorrect = checkbox.checked;
-      checkbox.style.display = "none";
+      var control = li.querySelector(".task-list-control");
+      if (control) control.remove();
+      else checkbox.remove();
+      return { li: li, isCorrect: isCorrect };
+    }).filter(Boolean);
 
+    entries.forEach(function (entry) {
+      var li = entry.li;
       var icon = document.createElement("span");
       icon.className = "mc-quiz-icon";
       icon.textContent = "○";
       li.insertBefore(icon, li.firstChild);
+      entry.icon = icon;
 
       li.classList.add("mc-quiz-option");
       li.setAttribute("role", "button");
@@ -26,19 +36,17 @@
       function choose() {
         if (quiz.classList.contains("answered")) return;
         quiz.classList.add("answered");
-        items.forEach(function (other) {
-          var otherCb = other.querySelector('input[type="checkbox"]');
-          var otherIcon = other.querySelector(".mc-quiz-icon");
-          if (otherCb && otherCb.checked) {
-            other.classList.add("mc-quiz-correct");
-            if (otherIcon) otherIcon.textContent = "✔";
+        entries.forEach(function (other) {
+          if (other.isCorrect) {
+            other.li.classList.add("mc-quiz-correct");
+            other.icon.textContent = "✔";
           }
         });
-        if (!isCorrect) {
+        if (!entry.isCorrect) {
           li.classList.add("mc-quiz-incorrect");
           icon.textContent = "✘";
         }
-        feedback.textContent = isCorrect
+        feedback.textContent = entry.isCorrect
           ? "¡Correcto!"
           : "No es esa — fijate cuál se marcó en verde.";
         feedback.style.display = "block";

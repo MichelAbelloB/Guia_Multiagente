@@ -74,11 +74,6 @@ Más videos sobre este módulo:
 | [Storing and Using Long-Term Memory in AI Agents with LangGraph](https://www.youtube.com/watch?v=iVtVsI4UTfo) | — | Cubre memoria de largo plazo en agentes, adelanta conceptos que se retoman en el Módulo 4-5 con LangGraph. |
 | [Agent Memory: Long-Term Memory in LangGraph](https://www.youtube.com/watch?v=MkgvJzgJc4s) | — | Repaso de los tipos de memoria en agentes (episódica, semántica, procedural). |
 
-## Notas para el instructor
-
-- ChromaDB corre embebido, sin servidor externo — ideal para que cada participante lo levante local sin fricción.
-- El Día 15 corresponde a la Fase 2 del proyecto sincrónico (`proyecto-sincronico/fase-2-memoria/`).
-
 ## Ejercicio práctico
 
 Escribí una función `contar_hallazgos(coleccion)` que devuelva cuántos documentos hay guardados en total en la colección de ChromaDB.
@@ -98,6 +93,22 @@ Escribí una función `contar_hallazgos(coleccion)` que devuelva cuántos docume
 - [ ] Un error de conexión con ChromaDB.
 - [x] Cuando información irrelevante o desactualizada en el contexto degrada la calidad de la respuesta.
 - [ ] Cuando el agente no tiene ninguna memoria configurada.
+</div>
+
+<div class="mc-quiz" markdown>
+¿Qué hace `coleccion.query()` de ChromaDB?
+
+- [ ] Borra todos los documentos guardados en la colección.
+- [x] Busca los documentos más relevantes por similitud semántica.
+- [ ] Crea una colección nueva desde cero.
+</div>
+
+<div class="mc-quiz" markdown>
+En el ejemplo del módulo, ¿dónde persisten los datos guardados en ChromaDB?
+
+- [ ] Solo en memoria — se pierden al cerrar el proceso.
+- [x] En un path local, usando `PersistentClient`.
+- [ ] En un servidor externo obligatorio.
 </div>
 
 ## Checklist de cierre del módulo

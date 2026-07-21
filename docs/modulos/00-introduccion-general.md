@@ -148,12 +148,6 @@ Más videos sobre este módulo:
 | [What are AI agents?](https://www.youtube.com/watch?v=3zgm60bXmQk) | Microsoft — serie "AI Agents for Beginners" | Explica el concepto general de agente sin atarse a un framework específico. |
 | [Tutorial Ollama en Español: Tu LLM Privado en Casa](https://www.youtube.com/watch?v=WkouIQBB1GI) | — (en español) | Acompaña la actividad práctica de este módulo: instalar y correr un modelo local paso a paso. |
 
-## Notas para el instructor
-
-- Útil como nivelación si el grupo tiene niveles dispares de familiaridad con LLMs — puede acortarse a una charla de 15 minutos si todo el grupo ya conoce los conceptos base.
-- No introduce todavía el loop ReAct ni tool calling en detalle — es intencional, se reserva para el Módulo 1 y el Módulo 2 respectivamente. Acá el objetivo es vocabulario e intuición general, no implementación.
-- Si el grupo ya tiene experiencia previa con LLMs (ej. uso de ChatGPT/Claude a nivel usuario), este módulo puede resumirse solo a la actividad práctica de Ollama.
-
 ## Ejercicio práctico
 
 Sin mirar la tabla del ecosistema de arriba, escribí de memoria en qué módulo se ve en detalle cada una de estas piezas: LangGraph, ChromaDB, Langfuse, tool calling.
@@ -172,6 +166,22 @@ Sin mirar la tabla del ecosistema de arriba, escribí de memoria en qué módulo
 - [ ] Cuántos tokens puede generar el modelo como máximo.
 - [x] Cuán determinista o variada es la salida del modelo.
 - [ ] Qué modelo específico se usa para responder.
+</div>
+
+<div class="mc-quiz" markdown>
+¿Qué diferencia a RAG de fine-tuning?
+
+- [ ] RAG cambia los pesos internos del modelo, igual que el fine-tuning.
+- [x] RAG inyecta contexto externo en el prompt, sin tocar el modelo.
+- [ ] Son dos nombres distintos para la misma técnica.
+</div>
+
+<div class="mc-quiz" markdown>
+¿Qué es la "inferencia"?
+
+- [ ] El proceso de entrenar un modelo desde cero.
+- [x] El proceso de generar una respuesta a partir de un prompt.
+- [ ] El proceso de instalar Ollama en la máquina.
 </div>
 
 ## Checklist de cierre del módulo

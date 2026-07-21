@@ -67,11 +67,6 @@ Más videos sobre este módulo:
 |---|---|---|
 | [Tips for building AI agents](https://www.youtube.com/watch?v=LP5OCa20Zpg) | — (equipo de Anthropic) | Errores comunes y buenas prácticas al construir agentes — cierra el círculo con el video de apertura del Módulo 1. |
 
-## Notas para el instructor
-
-- El Día 60 corresponde a la Fase 7 del proyecto (`proyecto-sincronico/fase-7-demo-final/`) — demo con métricas de costo, latencia y tasa de éxito.
-- Cerrar con la rúbrica de checkpoints completa y el [glosario](../recursos/glosario.md) ampliado como entregable del curso.
-
 !!! tip "Nodo dice"
     Llegaste hasta acá — de un LLM que solo predice texto a un sistema completo de agentes coordinados. Fue un buen recorrido. ¡Éxitos en el Demo Day!
 
@@ -100,6 +95,22 @@ Escribí un resultado de búsqueda simulado que intente un prompt injection, y e
 - [ ] Usar siempre el modelo más grande disponible.
 - [x] Tratar todo contenido externo observado por una herramienta como dato, nunca como instrucción.
 - [ ] No darle herramientas al agente.
+</div>
+
+<div class="mc-quiz" markdown>
+¿Qué resuelve MCP (Model Context Protocol)?
+
+- [ ] Mejora la velocidad de inferencia del modelo.
+- [x] Estandariza cómo un agente descubre y llama herramientas o fuentes de datos.
+- [ ] Reemplaza por completo a LangGraph.
+</div>
+
+<div class="mc-quiz" markdown>
+Además de la demo en vivo, ¿qué más debería mostrar la presentación del Día 60?
+
+- [ ] Solo el código fuente, sin ejecutarlo.
+- [x] Métricas de costo, latencia y tasa de éxito.
+- [ ] Nada más — alcanza con que la demo funcione.
 </div>
 
 ## Checklist de cierre del curso

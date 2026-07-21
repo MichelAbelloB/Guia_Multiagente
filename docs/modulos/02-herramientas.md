@@ -113,11 +113,6 @@ Más videos sobre este módulo:
 !!! note "Sobre los videos de este módulo"
     No se encontraron tutoriales recientes de buena calidad en español específicos sobre tool calling; los recomendados están en inglés — dado que la audiencia son desarrolladores con experiencia, no debería ser una barrera.
 
-## Notas para el instructor
-
-- Con Ollama, verificar que el modelo elegido soporte tool calling nativo (ej. `llama3.1`, `qwen2.5`); si no, mostrar el patrón manual de parseo de JSON como alternativa (el del Módulo 1).
-- El Día 10 avanza el proyecto: agregar la herramienta de búsqueda al agente de la Fase 1.
-
 ## Ejercicio práctico
 
 Escribí el tool schema (JSON Schema) para una herramienta `calcular(expresion: str)` que evalúa una expresión matemática simple, ej. `"12 * (4 + 1)"`.
@@ -151,6 +146,22 @@ Escribí el tool schema (JSON Schema) para una herramienta `calcular(expresion: 
 - [ ] El código fuente completo de la función.
 - [x] El `name`, la `description` y los `parameters` del esquema.
 - [ ] Los logs de ejecuciones anteriores de esa herramienta.
+</div>
+
+<div class="mc-quiz" markdown>
+¿Qué debería pasar si una herramienta falla al ejecutarse?
+
+- [ ] El programa debe detenerse inmediatamente con una excepción sin manejar.
+- [x] El error se devuelve al modelo como una observación más, para que decida cómo seguir.
+- [ ] Hay que reiniciar el agente desde cero.
+</div>
+
+<div class="mc-quiz" markdown>
+Según el módulo, ¿todos los modelos locales de Ollama soportan tool calling nativo por igual?
+
+- [ ] Sí, es una característica universal de cualquier modelo.
+- [x] No — modelos como `llama3.1` o `qwen2.5` lo soportan bien, pero no es garantizado para todos.
+- [ ] No, hace falta siempre una API paga para tool calling.
 </div>
 
 ## Checklist de cierre del módulo

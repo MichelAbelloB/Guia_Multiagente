@@ -74,11 +74,6 @@ Más videos sobre este módulo:
 |---|---|---|
 | [Hierarchical multi-agent systems with LangGraph](https://www.youtube.com/watch?v=B_0TNuYi56w) | — | Introduce patrones jerárquicos como base conceptual antes de entrar en orquestación (Módulo 7). |
 
-## Notas para el instructor
-
-- El Día 30 abre la Fase 4 del proyecto sincrónico (`proyecto-sincronico/fase-4-multiagente/`).
-- Buen momento para introducir la práctica de registrar decisiones de arquitectura (ADR) en `proyecto-sincronico/decisiones.md`.
-
 ## Ejercicio práctico
 
 Completá la plantilla de diseño de rol del Día 27 para un cuarto agente: "Auditor".
@@ -101,6 +96,22 @@ Completá la plantilla de diseño de rol del Día 27 para un cuarto agente: "Aud
 - [ ] Que el código queda más corto.
 - [x] Más latencia y más tokens, por las llamadas encadenadas y el contexto repetido.
 - [ ] Que deja de funcionar con modelos locales.
+</div>
+
+<div class="mc-quiz" markdown>
+En la plantilla de diseño de rol, ¿qué campo se suele saltear y termina generando más problemas después?
+
+- [ ] "Sabe".
+- [x] "NO debe".
+- [ ] "Recibe de".
+</div>
+
+<div class="mc-quiz" markdown>
+¿Cuál es la diferencia entre comunicación por mensajes y por estado compartido?
+
+- [ ] Son exactamente lo mismo, solo cambia el nombre.
+- [x] Mensajes son explícitos entre agentes; estado compartido es un objeto común que todos leen y escriben.
+- [ ] El estado compartido no existe en LangGraph.
 </div>
 
 ## Checklist de cierre del módulo

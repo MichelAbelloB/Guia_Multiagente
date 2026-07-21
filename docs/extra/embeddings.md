@@ -126,6 +126,22 @@ Usando la función `similitud_coseno` del módulo, definí dos vectores de jugue
 - [ ] La cantidad de dimensiones que tiene el modelo de embeddings.
 </div>
 
+<div class="mc-quiz" markdown>
+En el ejemplo con Ollama, ¿qué modelo genera el embedding?
+
+- [ ] El mismo LLM principal que redacta las respuestas.
+- [x] Un modelo de embeddings aparte, como `nomic-embed-text`.
+- [ ] No hace falta ningún modelo, se calcula directo del texto.
+</div>
+
+<div class="mc-quiz" markdown>
+¿Cuál es una limitación real de los embeddings, según el módulo?
+
+- [ ] No tienen ninguna limitación conocida.
+- [x] Pueden acercar dos textos por razones superficiales, sin que el contenido sea realmente relevante.
+- [ ] No funcionan con texto en español.
+</div>
+
 ## Checklist de cierre
 
 - [ ] Calculé a mano (o con el snippet de arriba) la similitud coseno entre dos frases parecidas y dos frases distintas.

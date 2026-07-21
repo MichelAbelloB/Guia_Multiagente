@@ -94,11 +94,6 @@ Más videos sobre este módulo:
 | [Microsoft Autogen Crash Course \| Beginner Friendly](https://www.youtube.com/watch?v=ISHEQNUpwTs) | — | Curso introductorio a AutoGen. |
 | [AutoGen vs CrewAI vs LangGraph — I Tried Them All So You Don't Have To](https://www.youtube.com/watch?v=Lp-5BYjNqlM) | — | Comparación práctica de los tres frameworks — buen cierre para el Día 44. |
 
-## Notas para el instructor
-
-- CrewAI y AutoGen son ambos open source (igual que LangGraph) — el criterio de comparación es nivel de abstracción, no costo.
-- El Día 42 corresponde a la Fase 5 del proyecto (`proyecto-sincronico/fase-5-crewai/`).
-
 ## Ejercicio práctico
 
 Agregá una tercera `Task` al ejemplo de CrewAI del Día 41-42: un agente "Verificador" que revisa los hallazgos del Investigador antes de que el Redactor escriba el informe.
@@ -131,6 +126,22 @@ Agregá una tercera `Task` al ejemplo de CrewAI del Día 41-42: un agente "Verif
 - [ ] Más control fino sobre cada transición.
 - [x] Velocidad de desarrollo, a costa de control fino sobre el flujo.
 - [ ] Nada — ambos enfoques son funcionalmente idénticos.
+</div>
+
+<div class="mc-quiz" markdown>
+¿Qué modela AutoGen, según el módulo?
+
+- [ ] Un grafo de estados explícito, como LangGraph.
+- [x] Una conversación de chat entre agentes.
+- [ ] Un pipeline secuencial fijo, sin posibilidad de ramificarse.
+</div>
+
+<div class="mc-quiz" markdown>
+Según la tabla comparativa del módulo, ¿cuál de los tres tiene la curva de aprendizaje más alta?
+
+- [ ] CrewAI.
+- [x] LangGraph.
+- [ ] AutoGen.
 </div>
 
 ## Checklist de cierre del módulo

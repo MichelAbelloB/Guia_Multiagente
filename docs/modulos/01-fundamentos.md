@@ -108,12 +108,6 @@ Más videos sobre este módulo:
 | [ReAct AI Agents, clearly explained!](https://www.youtube.com/watch?v=vFdIrZyKEwQ) | — | Explicación corta y directa del patrón Thought → Action → Observation. |
 | [Understanding ReACT with LangChain](https://www.youtube.com/watch?v=Eug2clsLtFs) | — | Incluye notebook de Colab; sirve como demo práctica del loop ReAct antes de introducir frameworks. |
 
-## Notas para el instructor
-
-- Priorizar mostrar el *fallo* de un enfoque simple (una sola llamada al LLM) antes de introducir el loop de agente.
-- El código en vivo del Día 4 debe estar preparado de antemano (snippet corto, editable), no escrito desde cero.
-- Al cierre del Día 5, el proyecto debe quedar formalmente iniciado en `proyecto-sincronico/fase-1-agente-simple/`.
-
 ## Ejercicio práctico
 
 Tomá el agente mínimo del Día 4 y modificá el system prompt para que, además de decidir cuándo buscar, el modelo tenga que responder **siempre en una sola oración**, sin importar el camino que tome (con o sin `BUSCAR:`).
@@ -142,6 +136,22 @@ Tomá el agente mínimo del Día 4 y modificá el system prompt para que, ademá
 - [ ] El agente usa un modelo más grande.
 - [x] El agente puede observar el resultado de su propia acción antes de decidir el siguiente paso.
 - [ ] El chatbot no puede usar system prompts.
+</div>
+
+<div class="mc-quiz" markdown>
+En el loop ReAct, ¿qué viene justo después de "Action"?
+
+- [ ] Thought, siempre se repite el pensamiento antes de actuar.
+- [x] Observation — el resultado de la acción ejecutada.
+- [ ] La respuesta final, sin pasos intermedios.
+</div>
+
+<div class="mc-quiz" markdown>
+¿Por qué conviene mostrar primero el *fallo* de una sola llamada al LLM, antes de introducir el agente?
+
+- [x] Para que se note claramente qué problema resuelve el loop de agente.
+- [ ] Porque una sola llamada es más lenta de programar.
+- [ ] Porque los agentes nunca pueden fallar.
 </div>
 
 ## Checklist de cierre del módulo

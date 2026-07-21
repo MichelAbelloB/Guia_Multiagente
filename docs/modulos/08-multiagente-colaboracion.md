@@ -99,11 +99,6 @@ Más videos sobre este módulo:
 |---|---|---|
 | [LangGraph:18 — Network / Collaborative Multi-Agent System Implementation](https://www.youtube.com/watch?v=OlxJtmYW5dk) | — | Implementación de un sistema tipo "network" colaborativo, complementario al patrón supervisor del Módulo 7. |
 
-## Notas para el instructor
-
-- Semana de repaso/buffer sugerida.
-- El Día 40 es un buen punto de checkpoint de rúbrica: verificar que cada participante pueda explicar los 4 patrones multiagente del [glosario](../recursos/glosario.md).
-
 ## Ejercicio práctico
 
 Agregá un contador de reintentos al ciclo auditor↔redactor del Día 36, que escale a un humano después de 3 rechazos en vez de repetir para siempre.
@@ -128,6 +123,22 @@ Agregá un contador de reintentos al ciclo auditor↔redactor del Día 36, que e
 - [ ] Para que el código compile sin errores.
 - [x] Para evitar un loop infinito de revisiones cuando los agentes no coinciden.
 - [ ] No hace falta si el modelo usado es lo suficientemente bueno.
+</div>
+
+<div class="mc-quiz" markdown>
+En el patrón Paralelo + agregación, ¿cuándo corre el nodo agregador?
+
+- [ ] Antes de que arranquen las ramas paralelas.
+- [x] Recién cuando todas las ramas paralelas terminaron.
+- [ ] Al mismo tiempo que las ramas paralelas.
+</div>
+
+<div class="mc-quiz" markdown>
+¿Qué relación tiene el ciclo auditor↔redactor con las aristas condicionales del Módulo 4?
+
+- [ ] Ninguna, son mecanismos completamente distintos.
+- [x] Es el mismo mecanismo, aplicado a una revisión entre dos agentes en vez de entre agente y herramienta.
+- [ ] Reemplaza por completo la necesidad de aristas condicionales.
 </div>
 
 ## Checklist de cierre del módulo

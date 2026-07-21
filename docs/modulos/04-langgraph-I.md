@@ -90,11 +90,6 @@ Más videos sobre este módulo:
 | [LangChain Academy: Introduction to LangGraph](https://www.youtube.com/watch?v=29XE10U6ooc) | LangChain | Resumen del curso oficial de LangChain Academy sobre LangGraph. |
 | [Introducción a LangGraph: Crea Sistemas Multi-agentes en Python](https://www.youtube.com/watch?v=fDCcDkKWabY) | — (en español) | Cubre nodos/grafos como base para lo que se ve en los Módulos 6-8 (multiagente). |
 
-## Notas para el instructor
-
-- LangGraph funciona igual con modelos locales (vía `langchain-ollama`) que con APIs de pago — no hay que cambiar de framework al migrar de un extremo a otro.
-- El Día 19 inicia la Fase 3 del proyecto (`proyecto-sincronico/fase-3-langgraph/`).
-
 ## Ejercicio práctico
 
 Agregá un tercer nodo `resumen` al grafo mínimo del Día 17-18, que se ejecute justo antes de terminar (cuando `hay_tool_call` devuelve `END`), en vez de terminar directo.
@@ -120,6 +115,22 @@ Agregá un tercer nodo `resumen` al grafo mínimo del Día 17-18, que se ejecute
 - [ ] Una arista que siempre lleva al mismo nodo siguiente.
 - [x] Una transición cuyo destino se decide en tiempo de ejecución según el estado.
 - [ ] Un nodo que puede fallar y reintentar automáticamente.
+</div>
+
+<div class="mc-quiz" markdown>
+¿Qué es `State` en LangGraph?
+
+- [ ] El servidor donde corre el modelo.
+- [x] Un diccionario tipado que define qué información comparten los nodos del grafo.
+- [ ] El nombre interno del framework.
+</div>
+
+<div class="mc-quiz" markdown>
+¿Qué cambia realmente al migrar del loop manual del Módulo 1 a un grafo de LangGraph?
+
+- [ ] El comportamiento del agente cambia por completo.
+- [x] El flujo se vuelve inspeccionable: se puede visualizar, pausar y (desde el Módulo 5) persistir.
+- [ ] El agente deja de necesitar un modelo de lenguaje.
 </div>
 
 ## Checklist de cierre del módulo

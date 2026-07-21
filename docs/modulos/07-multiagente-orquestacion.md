@@ -83,10 +83,6 @@ Más videos sobre este módulo:
 |---|---|---|
 | [LangGraph:20 — Supervisor Multi-Agentic System](https://www.youtube.com/watch?v=ktjJAxaX8rc) | — | Implementación práctica adicional del patrón supervisor/router. |
 
-## Notas para el instructor
-
-- Comparar ambos patrones en vivo sobre el mismo caso de uso ayuda a que el grupo entienda el criterio de decisión, no solo la sintaxis.
-
 ## Ejercicio práctico
 
 Dado un caso donde el orden de pasos SIEMPRE es el mismo (investigar → verificar → redactar → auditar, sin excepciones ni repeticiones), escribí la versión pipeline con `add_edge` en cadena.
@@ -108,6 +104,22 @@ Dado un caso donde el orden de pasos SIEMPRE es el mismo (investigar → verific
 - [ ] Pipeline secuencial.
 - [x] Supervisor/Router.
 - [ ] Ninguno — si hay que repetir un paso, hay que rehacer todo el flujo desde cero.
+</div>
+
+<div class="mc-quiz" markdown>
+¿Quién hace el trabajo real en el patrón Supervisor?
+
+- [ ] El propio supervisor, que resuelve todas las tareas.
+- [x] Los agentes delegados — el supervisor solo decide quién actúa a continuación.
+- [ ] Nadie: el patrón Supervisor no ejecuta ninguna tarea.
+</div>
+
+<div class="mc-quiz" markdown>
+¿Qué gana el patrón Pipeline secuencial frente al Supervisor?
+
+- [ ] Más flexibilidad para repetir pasos según el caso.
+- [x] Simplicidad y previsibilidad, cuando el orden de los pasos nunca cambia.
+- [ ] Nada — el Supervisor siempre es la mejor opción.
 </div>
 
 ## Checklist de cierre del módulo

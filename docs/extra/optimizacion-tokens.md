@@ -152,6 +152,22 @@ Tomá la descripción de `herramienta_busqueda` del Módulo 2 y reescribila para
 - [ ] Los esquemas de herramientas repetidos en cada llamada.
 </div>
 
+<div class="mc-quiz" markdown>
+¿Por qué el español suele consumir más tokens que el inglés para el mismo contenido?
+
+- [ ] Porque el español tiene más letras en su abecedario.
+- [x] Por los acentos, palabras más largas en promedio y ciertas conjugaciones.
+- [ ] No es cierto — consumen exactamente lo mismo.
+</div>
+
+<div class="mc-quiz" markdown>
+¿Qué estrategia ayuda a reducir los tokens del historial de conversación?
+
+- [ ] Mandar siempre el historial completo, sin resumir nada.
+- [x] Resumir los turnos viejos y mantener solo los recientes literales.
+- [ ] Aumentar el valor de `temperature`.
+</div>
+
 ## Checklist de cierre
 
 - [ ] Medí (con `prompt_eval_count`/`eval_count` de Ollama) cuántos tokens consume una llamada real del proyecto sincrónico.

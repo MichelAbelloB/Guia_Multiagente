@@ -107,6 +107,22 @@ En la simulación, cambiá el dataset (arriba a la izquierda) de "circle" a "spi
 - [ ] Decide cuántas capas va a tener la red.
 </div>
 
+<div class="mc-quiz" markdown>
+¿Qué representan los pesos (weights) de una neurona?
+
+- [ ] Cuántas capas tiene la red en total.
+- [x] Qué tan importante es cada entrada para esa neurona en particular.
+- [ ] El número de ejemplos usados para entrenar.
+</div>
+
+<div class="mc-quiz" markdown>
+En la simulación del Playground, ¿qué representan el grosor y el color de las líneas entre neuronas?
+
+- [ ] La velocidad de la conexión a internet.
+- [x] La magnitud y el signo de los pesos de la red.
+- [ ] El nombre de cada capa.
+</div>
+
 ## Videos recomendados
 
 <div class="video-embed" data-yt-id="aircAruvnKk" data-title="But what is a Neural Network? | Deep learning, chapter 1"></div>

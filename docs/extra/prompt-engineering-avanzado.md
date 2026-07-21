@@ -153,6 +153,22 @@ Convertí el prompt de clasificación de sentimiento (few-shot) del módulo en u
 - [ ] Nunca conviene usarlo, es una técnica obsoleta.
 </div>
 
+<div class="mc-quiz" markdown>
+¿Qué es few-shot prompting?
+
+- [ ] Reentrenar el modelo con un dataset pequeño de ejemplos.
+- [x] Mostrarle al modelo 2-3 ejemplos de entrada/salida dentro del mismo prompt.
+- [ ] Usar una temperature muy baja para respuestas consistentes.
+</div>
+
+<div class="mc-quiz" markdown>
+¿Qué hace más confiable el structured output, según el módulo?
+
+- [ ] Solo pedir "respondé en JSON" en texto libre, sin nada más.
+- [x] Combinar una instrucción explícita del esquema con validación posterior en código.
+- [ ] Usar un modelo más grande, sin cambiar nada más.
+</div>
+
 ## Checklist de cierre
 
 - [ ] Reescribí un prompt del proyecto sincrónico agregando 2-3 ejemplos few-shot y comparé el resultado contra la versión sin ejemplos.

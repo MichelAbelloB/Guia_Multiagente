@@ -71,11 +71,6 @@ Más videos sobre este módulo:
 !!! note "Sobre los videos de este módulo"
     No se encontró un video que combine específicamente LangGraph + Langfuse en un stack 100% open source (sin nube propietaria); los dos de arriba cubren deployment y monitoreo por separado pero son los más alineados disponibles.
 
-## Notas para el instructor
-
-- Semana de repaso/buffer sugerida.
-- El Día 55 continúa la Fase 6 del proyecto, agregando trazabilidad completa con Langfuse.
-
 ## Ejercicio práctico
 
 Agregá manejo de reintentos con backoff a la llamada de `app.invoke` del Día 53, con un máximo de 3 intentos ante un error transitorio.
@@ -102,6 +97,22 @@ Agregá manejo de reintentos con backoff a la llamada de `app.invoke` del Día 5
 - [ ] El tiempo total que tarda en generarse la respuesta completa.
 - [x] La latencia percibida por el usuario, que ve la respuesta aparecer en vivo.
 - [ ] El costo en tokens de la llamada.
+</div>
+
+<div class="mc-quiz" markdown>
+¿Qué mide `prompt_eval_count` en la respuesta de Ollama?
+
+- [ ] Los tokens generados en la respuesta del modelo.
+- [x] Los tokens del prompt de entrada.
+- [ ] La latencia total de la llamada, en milisegundos.
+</div>
+
+<div class="mc-quiz" markdown>
+¿Cuándo NO conviene reintentar automáticamente un fallo?
+
+- [ ] Cuando es un timeout de red transitorio.
+- [x] Cuando es un bug real, como llamar a una herramienta que no existe.
+- [ ] Nunca conviene reintentar, bajo ninguna circunstancia.
 </div>
 
 ## Checklist de cierre del módulo
