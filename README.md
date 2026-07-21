@@ -4,27 +4,49 @@
 
 Creado y dictado por **Michel Abello**.
 
-Sesiones diarias de 30 minutos · Audiencia: desarrolladores con experiencia · Duración: 12 semanas (continuo)
+Sesiones diarias de 30 minutos · Audiencia: desarrolladores con experiencia · Duración: 12 semanas (continuo) · Stack 100% **open source y sin costo** (Ollama, LangGraph, CrewAI/AutoGen, ChromaDB, Langfuse self-hosted).
 
-Stack 100% **open source y sin costo**: Ollama (modelos locales), LangGraph, CrewAI/AutoGen, ChromaDB, Langfuse self-hosted.
+> ### 📖 La documentación completa e interactiva del curso está publicada acá:
+> ## **[michelabellob.github.io/Guia_Multiagente](https://michelabellob.github.io/Guia_Multiagente/)**
+>
+> Navegación por módulo, videos, diagramas, ejemplos de código, autoevaluaciones y una simulación jugable — todo pensado para leerse ahí, no en este archivo.
 
-**La documentación completa vive en [michelabellob.github.io/Guia_Multiagente](https://michelabellob.github.io/Guia_Multiagente/)** — sitio navegable con búsqueda, videos por módulo, diagramas y ejemplos de código.
+## Qué vas a aprender
 
-Este repositorio es la fuente de esa documentación (carpeta [`docs/`](docs/)), generada con [MkDocs Material](https://squidfunk.github.io/mkdocs-material/) y publicada automáticamente en GitHub Pages en cada push a `main`.
+Este curso lleva de cero a un sistema multiagente completo, funcionando en local y sin depender de ningún servicio pago. Al terminarlo vas a poder:
 
-## Estructura del repo
+- Explicar qué es un LLM y qué lo convierte en un **agente**: el loop de razonar → actuar → observar (ReAct).
+- Darle **herramientas** a un agente (tool/function calling) y manejar sus fallos con criterio.
+- Dotarlo de **memoria** de corto y largo plazo, con RAG y una base vectorial (ChromaDB).
+- Modelar agentes como **grafos de estado** con LangGraph: ciclos, checkpoints y aprobación humana (human-in-the-loop).
+- Diseñar **sistemas multiagente**: cuándo dividir responsabilidades, y los patrones de coordinación más usados (Supervisor, Pipeline, Debate, Paralelo).
+- Comparar LangGraph contra alternativas de más alto nivel como **CrewAI** y **AutoGen**, con criterio propio.
+- **Evaluar** agentes (no es testing tradicional), detectar alucinaciones y tool misuse, y aplicar guardrails.
+- Lo que hace falta para llevar un agente a **producción**: costos, latencia, observabilidad (Langfuse) y manejo de fallos.
+- Seguridad (prompt injection) y hacia dónde va el campo (MCP, agentes multimodales).
 
-```text
-docs/
-├── index.md                  # portada del sitio
-├── modulos/                  # los 12 módulos del curso
-├── proyecto-sincronico.md    # proyecto que evoluciona semana a semana
-└── recursos/                 # glosario, stack técnico, videos y lecturas
-mkdocs.yml                    # configuración del sitio
-.github/workflows/deploy.yml  # build + deploy automático a GitHub Pages
-```
+Todo esto se aplica en simultáneo sobre un mismo **proyecto sincrónico** (una agencia de investigación y reporte automatizado) que crece de complejidad módulo a módulo, y se complementa con **módulos extra** de profundización (arquitectura de transformers, redes neuronales, embeddings, optimización de tokens, prompt engineering avanzado) y una **simulación jugable** para practicar los conceptos antes de tocar código real.
 
-## Correr la documentación en local
+## Programa
+
+| Semana | Módulo |
+|---|---|
+| — | 0 · Panorama general (orientación) |
+| 1 | Fundamentos |
+| 2 | Herramientas (Tool Calling) |
+| 3 | Memoria y estado |
+| 4-5 | LangGraph I y II |
+| 6-8 | Multiagente: fundamentos, orquestación, colaboración |
+| 9 | Frameworks alternativos (CrewAI, AutoGen) |
+| 10 | Evaluación y confiabilidad |
+| 11 | Producción |
+| 12 | Cierre y Demo Day |
+
+El programa completo, con desglose día a día, ejemplos y videos, está en el [sitio publicado](https://michelabellob.github.io/Guia_Multiagente/).
+
+## Sobre este repositorio
+
+Este repo es la fuente del sitio de arriba — la carpeta [`docs/`](docs/), generada con [MkDocs Material](https://squidfunk.github.io/mkdocs-material/) y publicada automáticamente en GitHub Pages en cada push a `main`. Para correrlo en local:
 
 ```bash
 python -m venv venv
@@ -35,12 +57,6 @@ mkdocs serve
 
 Abre [http://127.0.0.1:8000](http://127.0.0.1:8000) con recarga automática al editar cualquier archivo de `docs/`.
 
-## Cómo usar el curso
-
-1. Cada semana, el instructor abre la página del módulo correspondiente en el sitio publicado.
-2. Cada día tiene: tema explicado, ejemplo de código cuando aplica, y actividad práctica sobre el [proyecto sincrónico](docs/proyecto-sincronico.md).
-3. El código de ejemplo de cada sesión (cuando exista) se agrega en una subcarpeta `codigo/` dentro del módulo correspondiente, en commits separados, para llevar historial de cómo evolucionó el proyecto.
-
 ## Licencia
 
-Contenido educativo de uso libre. Todas las herramientas recomendadas en el curso son open source — ver [Stack técnico](docs/recursos/stack-tecnico.md).
+Contenido educativo de uso libre. Todas las herramientas recomendadas en el curso son open source — ver [Stack técnico](https://michelabellob.github.io/Guia_Multiagente/recursos/stack-tecnico/).
