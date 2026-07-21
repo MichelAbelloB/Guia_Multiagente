@@ -27,7 +27,7 @@ Un LLM (Large Language Model / modelo de lenguaje grande) es un modelo entrenado
 
 #### Token
 
-La unidad mínima de texto que el modelo procesa (no siempre es una palabra completa).
+La unidad mínima de texto que el modelo procesa (no siempre es una palabra completa). Podés ver cómo se divide un texto en tokens, en vivo, con el [tokenizador de OpenAI](https://platform.openai.com/tokenizer) — pegá cualquier frase en español y mirá en cuántos fragmentos se parte.
 
 ```mermaid
 flowchart LR

@@ -5,6 +5,14 @@
 
 <div class="grid cards" markdown>
 
+-   :material-hub:{ .lg .middle } **Redes neuronales**
+
+    ---
+
+    Neuronas, capas y cómo aprenden — con una simulación interactiva en tiempo real para verlo entrenar en vivo.
+
+    [:octicons-arrow-right-24: Ver módulo](redes-neuronales.md)
+
 -   :material-scale-balance:{ .lg .middle } **Prompting vs. fine-tuning vs. RAG**
 
     ---

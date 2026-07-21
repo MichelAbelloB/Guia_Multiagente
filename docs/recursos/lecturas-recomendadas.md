@@ -54,6 +54,9 @@
 
 | Módulo extra | Video | Enlace |
 |---|---|---|
+| Redes neuronales | But what is a Neural Network? (3Blue1Brown) | [youtube.com/watch?v=aircAruvnKk](https://www.youtube.com/watch?v=aircAruvnKk) |
+| Redes neuronales | ¿Qué es una Red Neuronal? Parte 1: La Neurona (Dot CSV, español) | [youtube.com/watch?v=MRIv2IwFTPg](https://www.youtube.com/watch?v=MRIv2IwFTPg) |
+| Redes neuronales | ¿Qué es una Red Neuronal? Parte 2: La Red (Dot CSV, español) | [youtube.com/watch?v=uwbHOpp9xkc](https://www.youtube.com/watch?v=uwbHOpp9xkc) |
 | Prompting vs. fine-tuning vs. RAG | ChatGPT Prompting vs RAG vs fine tuning (CodelyTV, español) | [youtube.com/watch?v=bjCdsnkQ6Dw](https://www.youtube.com/watch?v=bjCdsnkQ6Dw) |
 | Prompting vs. fine-tuning vs. RAG | RAG vs Fine Tuning vs Prompt Engineering: Use Cases | [youtube.com/watch?v=2m1rWVy4uqE](https://www.youtube.com/watch?v=2m1rWVy4uqE) |
 | Arquitectura de Transformers | But what is a GPT? Visual intro to transformers (3Blue1Brown) | [youtube.com/watch?v=yMQPQuz5WpA](https://www.youtube.com/watch?v=yMQPQuz5WpA) |

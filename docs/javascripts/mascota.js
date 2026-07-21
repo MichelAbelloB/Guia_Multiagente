@@ -28,6 +28,7 @@
     "/recursos/stack-tecnico/": "Todo lo que necesitás instalar está acá, con comandos para Linux/macOS y Windows.",
     "/recursos/lecturas-recomendadas/": "Todos los videos del curso, agrupados por módulo, en una sola lista.",
     "/extra/": "Estos módulos no consumen semana del cronograma — son para cuando querés profundizar un tema puntual.",
+    "/extra/redes-neuronales/": "No te vayas sin apretar play en la simulación de abajo — verla entrenar en vivo dice más que cualquier párrafo.",
     "/extra/prompting-vs-finetuning-vs-rag/": "Si tenés dudas, andá directo al árbol de decisión: en dos preguntas te dice qué técnica conviene para tu caso.",
     "/extra/arquitectura-transformers/": "Es el módulo más denso del curso. Andá con calma, y si algo no cierra, el video de 3Blue1Brown lo explica mejor que cualquier texto.",
     "/extra/optimizacion-tokens/": "Corré el ejemplo de tiktoken con una frase en español y otra en inglés — vas a ver la diferencia con tus propios ojos, no hace falta que me creas.",

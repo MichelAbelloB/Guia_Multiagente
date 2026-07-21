@@ -71,7 +71,7 @@ flowchart TB
     siguiente token"]
 ```
 
-Cada bloque combina self-attention (mezcla información entre tokens) con una red feed-forward (procesa cada token individualmente), más conexiones residuales y normalización que estabilizan el entrenamiento. Los modelos que usa el curso (Llama, Qwen, Mistral vía Ollama) son **decoder-only**: apilan docenas de estos bloques y en cada paso predicen un único token siguiente, usando todo lo generado hasta ahí como contexto — exactamente el mecanismo de "inferencia" del [Módulo 0](../modulos/00-introduccion-general.md), visto ahora por dentro.
+Cada bloque combina self-attention (mezcla información entre tokens) con una **red feed-forward** — una red neuronal común, del tipo que se explica en el módulo de [Redes neuronales](redes-neuronales.md) — que procesa cada token individualmente, más conexiones residuales y normalización que estabilizan el entrenamiento. Los modelos que usa el curso (Llama, Qwen, Mistral vía Ollama) son **decoder-only**: apilan docenas de estos bloques y en cada paso predicen un único token siguiente, usando todo lo generado hasta ahí como contexto — exactamente el mecanismo de "inferencia" del [Módulo 0](../modulos/00-introduccion-general.md), visto ahora por dentro.
 
 ## De la arquitectura al comportamiento de agente
 
