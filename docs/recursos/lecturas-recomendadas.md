@@ -54,6 +54,9 @@
 
 | Módulo extra | Video | Enlace |
 |---|---|---|
+| Ollama: modelos y guía rápida | Instala y Configura Ollama desde Cero (español) | [youtube.com/watch?v=FWLhkIsETbA](https://www.youtube.com/watch?v=FWLhkIsETbA) |
+| Ollama: modelos y guía rápida | Cómo Correr Modelos de IA Localmente (español) | [youtube.com/watch?v=gKVCnU5KCc0](https://www.youtube.com/watch?v=gKVCnU5KCc0) |
+| Ollama: modelos y guía rápida | Curso de OLLAMA 2026 (español) | [youtube.com/watch?v=FFjvZV05vxM](https://www.youtube.com/watch?v=FFjvZV05vxM) |
 | Redes neuronales | But what is a Neural Network? (3Blue1Brown) | [youtube.com/watch?v=aircAruvnKk](https://www.youtube.com/watch?v=aircAruvnKk) |
 | Redes neuronales | ¿Qué es una Red Neuronal? Parte 1: La Neurona (Dot CSV, español) | [youtube.com/watch?v=MRIv2IwFTPg](https://www.youtube.com/watch?v=MRIv2IwFTPg) |
 | Redes neuronales | ¿Qué es una Red Neuronal? Parte 2: La Red (Dot CSV, español) | [youtube.com/watch?v=uwbHOpp9xkc](https://www.youtube.com/watch?v=uwbHOpp9xkc) |

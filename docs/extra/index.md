@@ -5,6 +5,14 @@
 
 <div class="grid cards" markdown>
 
+-   :material-server:{ .lg .middle } **Ollama: modelos y guía rápida**
+
+    ---
+
+    Catálogo de modelos de Ollama y su especialidad, más una guía rápida de instalación y primeros comandos.
+
+    [:octicons-arrow-right-24: Ver módulo](ollama-modelos.md)
+
 -   :material-hub:{ .lg .middle } **Redes neuronales**
 
     ---

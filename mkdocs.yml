@@ -119,6 +119,7 @@ nav:
       - "12 · Cierre": modulos/12-cierre.md
   - Módulos extra:
       - extra/index.md
+      - "Ollama: modelos y guía rápida": extra/ollama-modelos.md
       - "Redes neuronales": extra/redes-neuronales.md
       - "Prompting vs. fine-tuning vs. RAG": extra/prompting-vs-finetuning-vs-rag.md
       - "Arquitectura de Transformers": extra/arquitectura-transformers.md

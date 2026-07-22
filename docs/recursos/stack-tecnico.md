@@ -12,7 +12,7 @@
 
 ## Notas de hardware
 
-Con Ollama, un modelo tipo `llama3.1:8b` o `qwen2.5:7b` corre razonablemente en una laptop con 16GB de RAM sin GPU dedicada (más lento) o con GPU de 8GB+ (fluido).
+Con Ollama, un modelo tipo `llama3.1:8b` o `qwen2.5:7b` corre razonablemente en una laptop con 16GB de RAM sin GPU dedicada (más lento) o con GPU de 8GB+ (fluido). Para un catálogo completo de modelos y cuál elegir según la tarea, ver el módulo extra [Ollama: modelos y guía rápida](../extra/ollama-modelos.md).
 
 !!! tip "Plan B para hardware limitado"
     Groq o Google AI Studio (Gemini) ofrecen niveles gratuitos con límite de requests — no son open source pero sí sin costo, útiles para no bloquear a nadie por hardware.
