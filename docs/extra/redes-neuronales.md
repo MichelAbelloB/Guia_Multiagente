@@ -1,5 +1,10 @@
 # Redes neuronales
 
+<figure markdown>
+![Guía simple de tipos de redes neuronales: feedforward, convolucionales, recurrentes, transformers y generativas](../assets/img/redes-neuronales.jpeg)
+<figcaption>Tipos de redes neuronales y para qué se usa cada una: feedforward (datos tabulares), convolucionales (imágenes), recurrentes (secuencias), transformers (el tipo que usan los LLM del curso) y generativas.</figcaption>
+</figure>
+
 !!! abstract "Tema central"
     Un LLM es, en el fondo, una red neuronal gigante. Este módulo explica qué es una red neuronal desde cero — neuronas, capas, cómo aprenden — y cierra con una **simulación interactiva en tiempo real** para ver el proceso de entrenamiento con tus propios ojos, no solo leerlo. Es la base conceptual del módulo de [Arquitectura de Transformers](arquitectura-transformers.md).
 
