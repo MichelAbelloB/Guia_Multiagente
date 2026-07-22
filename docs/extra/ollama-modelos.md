@@ -1,5 +1,10 @@
 # Ollama: modelos y guía rápida de inicio
 
+<figure markdown>
+![Guía de modelos de Ollama por especialización: generalistas, codificadores, ligeros, razonamiento avanzado, multimodales y orientados a acción](../assets/img/modelos-ollama.jpeg)
+<figcaption>Modelos de Ollama agrupados por especialización: generalistas, codificadores, ligeros, razonamiento avanzado, multimodales y orientados a acción (function calling).</figcaption>
+</figure>
+
 !!! abstract "Tema central"
     Ollama es la herramienta que corre detrás de cada agente del curso — pero "correr un modelo local" no es una decisión única: hay decenas de modelos distintos, cada uno con su propia especialidad. Este módulo es una referencia rápida de qué modelo elegir y cómo arrancar con Ollama desde cero, sin vueltas.
 
