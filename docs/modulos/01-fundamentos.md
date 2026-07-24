@@ -79,26 +79,65 @@ def buscar_web(query: str) -> str:
 
 def agente(pregunta: str, max_pasos: int = 3) -> str:
     mensajes = [
-        {"role": "system", "content": "Si necesitás datos actuales, respondé exactamente: BUSCAR: <consulta>. Si no, respondé la solución final."},
+        {
+            "role": "system",
+            "content": """
+Eres un agente de inteligencia artificial.
+
+Personalidad:
+- Siempre eres amable, respetuoso y profesional.
+- Saluda solo cuando sea apropiado.
+- Responde de forma clara, breve y precisa.
+- Usa un lenguaje sencillo y cordial.
+- Evita respuestas demasiado largas.
+
+Reglas:
+- Si necesitas información actual, responde SOLO con:
+  BUSCAR: <consulta>
+- Nunca digas que no tienes acceso a internet.
+- Si ya conoces la respuesta, respóndela directamente.
+- Cuando recibas el resultado de una búsqueda, úsalo para responder al usuario.
+"""
+        },
         {"role": "user", "content": pregunta},
     ]
 
-    for _ in range(max_pasos):
-        respuesta = ollama.chat(model=MODEL, messages=mensajes)["message"]["content"]
+    for paso in range(max_pasos):
+
+        respuesta = ollama.chat(
+            model=MODEL,
+            messages=mensajes
+        )["message"]["content"]
+
+        print(f"Paso {paso+1} → {respuesta}")
+
+        if "no tengo acceso" in respuesta.lower():
+            respuesta = f"BUSCAR: {pregunta}"
 
         if respuesta.startswith("BUSCAR:"):
-            consulta = respuesta.removeprefix("BUSCAR:").strip()
-            observacion = buscar_web(consulta)
-            mensajes.append({"role": "assistant", "content": respuesta})
-            mensajes.append({"role": "user", "content": f"Resultado de la búsqueda: {observacion}"})
-            continue  # vuelve a razonar con la nueva observación
 
-        return respuesta  # el modelo decidió que ya puede responder
+            consulta = respuesta.replace("BUSCAR:", "").strip()
+
+            observacion = buscar_web(consulta)
+
+            print(f"🔍 Buscando: {consulta}")
+            print(f"📥 Resultado: {observacion}")
+
+            mensajes.append({"role": "assistant", "content": respuesta})
+
+            mensajes.append({
+                "role": "user",
+                "content": f"Resultado de la búsqueda: {observacion}"
+            })
+
+            continue
+
+        return respuesta
 
     return "No se pudo resolver en el límite de pasos."
 ```
 
-Este es exactamente el loop del diagrama de arriba, escrito a mano — sin LangGraph, sin tool calling estructurado todavía. Eso viene en los módulos 2 y 4.
+Este es exactamente el loop del diagrama de arriba, escrito a mano — sin LangGraph, sin tool calling estructurado todavía. Eso viene en los módulos 2 y 4. El system prompt ahora separa **personalidad** (cómo responde) de **reglas** (cuándo actuar), y el chequeo de `"no tengo acceso"` es una red de seguridad extra por si el modelo, en vez de seguir el formato `BUSCAR:`, cae en la tentación de decir directamente que no puede buscar en internet.
 
 ## Videos recomendados
 
@@ -122,16 +161,28 @@ Tomá el agente mínimo del Día 4 y modificá el system prompt para que, ademá
     mensajes = [
         {
             "role": "system",
-            "content": (
-                "Si necesitás datos actuales, respondé exactamente: BUSCAR: <consulta>. "
-                "Si no, respondé la solución final. "
-                "En cualquier caso, tu respuesta final debe ser una sola oración, sin excepciones."
-            ),
+            "content": """
+Eres un agente de inteligencia artificial.
+
+Personalidad:
+- Siempre eres amable, respetuoso y profesional.
+- Saluda solo cuando sea apropiado.
+- Usa un lenguaje sencillo y cordial.
+
+Reglas:
+- Si necesitas información actual, responde SOLO con:
+  BUSCAR: <consulta>
+- Nunca digas que no tienes acceso a internet.
+- Si ya conoces la respuesta, respóndela directamente.
+- Cuando recibas el resultado de una búsqueda, úsalo para responder al usuario.
+- Tu respuesta final debe ser siempre una sola oración, sin excepciones,
+  tengas o no que buscar antes.
+"""
         },
         {"role": "user", "content": pregunta},
     ]
     ```
-    La restricción de formato ("una sola oración") se agrega como una regla más del system prompt, igual que la regla de cuándo buscar — ambas conviven en el mismo bloque de instrucciones.
+    La restricción de formato ("una sola oración") se agrega como una regla más, en la misma sección de Reglas — conviven ahí la regla de cuándo buscar y la regla de formato de salida, sin pisarse.
 
 ## Autoevaluación
 
